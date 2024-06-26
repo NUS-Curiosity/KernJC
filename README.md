@@ -56,7 +56,7 @@ cd tools/
 ./create-image.sh
 ```
 
-Note that you need to input your own NVD API key in `config.yaml` to enable the NVD API query feature. If you do not have an NVD API key, you can apply for one [here](https://nvd.nist.gov/vuln/data-feeds#JSON_FEED).
+Note that you need to input your own NVD API key in `config.yaml` to enable database updating. If you do not have an NVD API key, you can apply for one [here](https://nvd.nist.gov/vuln/data-feeds#JSON_FEED).
 
 ## Quick Start
 
