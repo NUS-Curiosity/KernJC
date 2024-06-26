@@ -1,0 +1,42 @@
+
+diff --git a/arch/x86/kernel/machine_kexec_64.c b/arch/x86/kernel/machine_kexec_64.c
+index 1f790cf9d38fe..3b7427aa7d850 100644
+--- a/arch/x86/kernel/machine_kexec_64.c
++++ b/arch/x86/kernel/machine_kexec_64.c
+@@ -542,6 +542,7 @@ int arch_kexec_apply_relocations_add(const Elf64_Ehdr *ehdr,
+ 				goto overflow;
+ 			break;
+ 		case R_X86_64_PC32:
++		case R_X86_64_PLT32:
+ 			value -= (u64)address;
+ 			*(u32 *)location = value;
+ 			break;
+diff --git a/arch/x86/kernel/module.c b/arch/x86/kernel/module.c
+index da0c160e55890..f58336af095c9 100644
+--- a/arch/x86/kernel/module.c
++++ b/arch/x86/kernel/module.c
+@@ -191,6 +191,7 @@ int apply_relocate_add(Elf64_Shdr *sechdrs,
+ 				goto overflow;
+ 			break;
+ 		case R_X86_64_PC32:
++		case R_X86_64_PLT32:
+ 			if (*(u32 *)loc != 0)
+ 				goto invalid_relocation;
+ 			val -= (u64)loc;
+diff --git a/arch/x86/tools/relocs.c b/arch/x86/tools/relocs.c
+index 5d73c443e778b..220e97841e494 100644
+--- a/arch/x86/tools/relocs.c
++++ b/arch/x86/tools/relocs.c
+@@ -770,9 +770,12 @@ static int do_reloc64(struct section *sec, Elf_Rel *rel, ElfW(Sym) *sym,
+ 		break;
+ 
+ 	case R_X86_64_PC32:
++	case R_X86_64_PLT32:
+ 		/*
+ 		 * PC relative relocations don't need to be adjusted unless
+ 		 * referencing a percpu symbol.
++		 *
++		 * NB: R_X86_64_PLT32 can be treated as R_X86_64_PC32.
+ 		 */
+ 		if (is_percpu_sym(sym, symname))
+ 			add_reloc(&relocs32neg, offset);

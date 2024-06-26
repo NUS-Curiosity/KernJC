@@ -1,0 +1,12 @@
+# if you are using Python 3.10 and fail to from pwn import *, try this:
+# pip uninstall pyelftools -y
+# pip install pyelftools==0.29
+pwntools
+PyYAML
+tqdm
+openai
+packaging
+beautifulsoup4
+termcolor
+prettytable
+networkx

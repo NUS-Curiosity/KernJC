@@ -1,0 +1,20 @@
+# common configs
+CONFIG_KALLSYMS_ALL: y
+CONFIG_DEBUG_INFO: y
+CONFIG_BINFMT_MISC: y
+CONFIG_USER_NS: y
+CONFIG_NET_NS: y
+CONFIG_E1000: y
+CONFIG_E1000E: y
+CONFIG_SYSVIPC: y
+# for syzkaller's filesystem
+# ref: https://github.com/google/syzkaller/blob/master/docs/linux/setup_ubuntu-host_qemu-vm_x86-64-kernel.md#enable-required-config-options
+CONFIG_DEBUG_INFO_DWARF4: y
+CONFIG_CONFIGFS_FS: y
+CONFIG_SECURITYFS: y
+
+# for sanitizers
+CONFIG_KCOV: y
+CONFIG_KASAN: y
+CONFIG_KASAN_INLINE: y
+

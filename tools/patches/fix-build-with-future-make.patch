@@ -1,0 +1,23 @@
+diff --git a/tools/objtool/Makefile b/tools/objtool/Makefile
+index e6acc281dd37..8ae824dbfca3 100644
+--- a/tools/objtool/Makefile
++++ b/tools/objtool/Makefile
+@@ -35,7 +35,7 @@  CFLAGS   += -Wall -Werror $(WARNINGS) -fomit-frame-pointer -O2 -g $(INCLUDES)
+ LDFLAGS  += -lelf $(LIBSUBCMD)
+ 
+ # Allow old libelf to be used:
+-elfshdr := $(shell echo '\#include <libelf.h>' | $(CC) $(CFLAGS) -x c -E - | grep elf_getshdr)
++elfshdr := $(shell echo '$(pound)include <libelf.h>' | $(CC) $(CFLAGS) -x c -E - | grep elf_getshdr)
+ CFLAGS += $(if $(elfshdr),,-DLIBELF_USE_DEPRECATED)
+ 
+ AWK = awk
+diff --git a/tools/scripts/Makefile.include b/tools/scripts/Makefile.include
+index dd614463d4d6..495066bafbe3 100644
+--- a/tools/scripts/Makefile.include
++++ b/tools/scripts/Makefile.include
+@@ -120,3 +120,5 @@  ifneq ($(silent),1)
+ 	QUIET_UNINST   = @printf '  UNINST   %s\n' $1;
+   endif
+ endif
++
++pound := \#

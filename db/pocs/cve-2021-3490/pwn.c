@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main() {
+	if(geteuid() == 0) {
+		setuid(0);
+		setgid(0);
+		system("/bin/bash");
+	}
+}

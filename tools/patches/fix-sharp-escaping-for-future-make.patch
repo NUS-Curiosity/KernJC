@@ -1,0 +1,12 @@
+diff --git a/tools/build/Build.include b/tools/build/Build.include
+index a4bbb984941d..d9048f145f97 100644
+--- a/tools/build/Build.include
++++ b/tools/build/Build.include
+@@ -63,8 +63,6 @@  dep-cmd = $(if $(wildcard $(fixdep)),
+            $(fixdep) $(depfile) $@ '$(make-cmd)' > $(dot-target).tmp;           \
+            rm -f $(depfile);                                                    \
+            mv -f $(dot-target).tmp $(dot-target).cmd,                           \
+-           printf '\# cannot find fixdep (%s)\n' $(fixdep) > $(dot-target).cmd; \
+-           printf '\# using basic dep data\n\n' >> $(dot-target).cmd;           \
+            cat $(depfile) >> $(dot-target).cmd;                                 \
+            printf '\n%s\n' 'cmd_$@ := $(make-cmd)' >> $(dot-target).cmd)

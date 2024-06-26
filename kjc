@@ -1,0 +1,313 @@
+#!/usr/bin/env python3
+
+"""
+KernJC - A Linux kernel vulnerability environment construction tool
+GitHub repo: https://github.com/NUS-Curiosity/KernJC
+"""
+
+import argparse
+import sys
+
+from src.global_vars import WORK_DIR, LOG_DIR, ENV_DIR, ENV_COMMON_IMAGE_DIR
+from src.util import ensure_dir
+from src.logger_config import configure_logger
+from src.version import __version__
+import src.cmds.update
+import src.cmds.query
+import src.cmds.build
+import src.cmds.start
+import src.cmds.stop
+import src.cmds.cp
+import src.cmds.rm
+import src.cmds.ps
+import src.cmds.enter
+import src.cmds.info
+import src.cmds.exec
+import src.cmds.attach
+import src.cmds.logs
+
+logger = configure_logger("main")
+
+
+def initialize():
+    """
+    Do necessary initialization.
+    """
+    # if the user is not root, warn
+    # if os.geteuid() != 0:
+    #     logger.warning("You are not root and some operations may fail")
+
+    ensure_dir(WORK_DIR)
+    ensure_dir(LOG_DIR)
+    ensure_dir(ENV_DIR)
+    ensure_dir(ENV_COMMON_IMAGE_DIR)
+
+
+def main():
+    initialize()
+
+    parser = argparse.ArgumentParser(
+        prog="kjc",
+        description="KernJC - A Linux kernel vulnerability reproduction tool",
+        epilog="GitHub: https://github.com/NUS-Curiosity/KernJC",
+    )
+    parser.add_argument(
+        "-v", "--version", action="version", version=f"KernJC {__version__}"
+    )
+
+    parser.set_defaults(func=lambda _: parser.print_help())
+    # subparsers = parser.add_subparsers(help='description', metavar='subcommand')
+    subparsers = parser.add_subparsers(title="subcommands", dest="subcommand")
+
+    parser_update = subparsers.add_parser("update", help="update local knodwledge base")
+    parser_update.set_defaults(func=src.cmds.update.handler)
+    parser_update.add_argument(
+        "--only-sc",
+        action="store_true",
+        help="only update version manifest for upstream kernel source code",
+    )
+    parser_update.add_argument(
+        "--only-cve",
+        action="store_true",
+        help="only update vuln info",
+    )
+
+    parser_build = subparsers.add_parser("build", help="build a vuln env")
+    parser_build.set_defaults(func=src.cmds.build.handler)
+    parser_build.add_argument("cve", help="CVE id", metavar="CVE-XXXX-XXXX")
+    parser_build.add_argument(
+        "-k",
+        "--kernel",
+        help="specify a vulnerable kernel version",
+        metavar="x.xx.xx",
+        required=False,
+    )
+    parser_build.add_argument(
+        '--allyesconfig',
+        action='store_true',
+        help='build with allyesconfig',
+    )
+    parser_build.add_argument(
+        '--defconfig',
+        action='store_true',
+        help='build with defconfig',
+    )
+
+    parser_start = subparsers.add_parser("start", help="start a vuln env")
+    parser_start.set_defaults(func=src.cmds.start.handler)
+    parser_start.add_argument(
+        "env_id", help="id of the vuln env to be started", metavar="ENV_ID"
+    )
+    # KernJC provides common QEMU options for users to specify.
+    # If the user wants to specify more options, they can use the --opts and
+    # --append to specify the options and -append strings respectively.
+    parser_start.add_argument(
+        "-m",
+        "--mem",
+        help="memory size (default: 2G)",
+        metavar="MEM",
+        default="2G",
+        required=False,
+    )
+    parser_start.add_argument(
+        "--smp",
+        help="number of CPUs (default: 2,cores=1)",
+        metavar="CPU_NUM",
+        default="2,cores=1",
+        required=False,
+    )
+    parser_start.add_argument(
+        "--cpu",
+        help="CPU model (default: host,+smep,+smap)",
+        metavar="CPU",
+        default="host,+smep,+smap",
+        required=False,
+    )
+    parser_start.add_argument(
+        "--kaslr",
+        help="enable KASLR",
+        action="store_true",
+        required=False,
+    )
+    parser_start.add_argument(
+        "--fgkaslr",
+        help="enable FGKASLR",
+        action="store_true",
+        required=False,
+    )
+    parser_start.add_argument(
+        "--smep",
+        help="enable SMEP",
+        action="store_true",
+        required=False,
+    )
+    parser_start.add_argument(
+        "--smap",
+        help="enable SMAP",
+        action="store_true",
+        required=False,
+    )
+    parser_start.add_argument(
+        "--kpti",
+        help="enable KPTI",
+        action="store_true",
+        required=False,
+    )
+    parser_start.add_argument(
+        "--enable-kvm",
+        help="enable KVM full virtualization support",
+        action="store_true",
+        required=False,
+    )
+    parser_start.add_argument(
+        "--opts",
+        help="specify more QEMU options",
+        metavar="OPTS",
+        default="",
+        required=False,
+    )
+    parser_start.add_argument(
+        "--append",
+        help="append a string to the kernel command line",
+        metavar="STRING",
+        default="",
+        required=False,
+    )
+    parser_start.add_argument(
+        "-r",
+        "--reuse",
+        help="reuse previous options (if you have started the env before)",
+        action="store_true",
+        required=False,
+    )
+
+    parser_stop = subparsers.add_parser("stop", help="stop a vuln env")
+    parser_stop.set_defaults(func=src.cmds.stop.handler)
+    parser_stop.add_argument(
+        "env_id", help="id of the vuln env to be stopped", metavar="ENV_ID"
+    )
+
+    parser_attach = subparsers.add_parser("attach", help="attach to a vuln env")
+    parser_attach.set_defaults(func=src.cmds.attach.handler)
+    parser_attach.add_argument(
+        "env_id", help="id of the vuln env to be attached", metavar="ENV_ID"
+    )
+
+    parser_exec = subparsers.add_parser("exec", help="execute a command in a vuln env")
+    parser_exec.set_defaults(func=src.cmds.exec.handler)
+    parser_exec.add_argument(
+        "env_id", help="id of the vuln env to be executed", metavar="ENV_ID"
+    )
+    parser_exec.add_argument(
+        "cmd", help="command to be executed", metavar="CMD", nargs=argparse.REMAINDER
+    )
+
+    # e.g., ./kjc cp ENV_ID:/path/to/file /path/to/file
+    #       ./kjc cp /path/to/file ENV_ID:/path/to/file
+    parser_cp = subparsers.add_parser(
+        "cp", help="copy files between host and a vuln env (ENV_ID:/path/to/file)"
+    )
+    parser_cp.set_defaults(func=src.cmds.cp.handler)
+    parser_cp.add_argument(
+        "src",
+        help="source file path",
+        metavar="SRC",
+    )
+    parser_cp.add_argument(
+        "dst",
+        help="destination file path",
+        metavar="DST",
+    )
+
+    parser_logs = subparsers.add_parser("logs", help="show QEMU logs of a vuln env")
+    parser_logs.set_defaults(func=src.cmds.logs.handler)
+    parser_logs.add_argument(
+        "env_id", help="id of the vuln env to be shown", metavar="ENV_ID"
+    )
+    parser_logs.add_argument(
+        "-f", "--follow", action="store_true", help="follow the log output"
+    )
+
+    parser_rm = subparsers.add_parser("rm", help="remove a vuln env")
+    parser_rm.set_defaults(func=src.cmds.rm.handler)
+    parser_rm.add_argument(
+        "env_id", help="id(s) of the vuln env(s) to be removed", metavar="ENV_ID", nargs='+'
+    )
+    parser_rm.add_argument(
+        "--force", action="store_true", help="remove without confirmation"
+    )
+
+    parser_ps = subparsers.add_parser("ps", help="list vuln envs")
+    parser_ps.set_defaults(func=src.cmds.ps.handler)
+    parser_ps.add_argument(
+        "-a", "--all", action="store_true", help="show all vuln envs, including stopped"
+    )
+
+    parser_enter = subparsers.add_parser("enter", help="enter an env dir on host")
+    parser_enter.set_defaults(func=src.cmds.enter.handler)
+    parser_enter.add_argument(
+        "env_id", help="id of the vuln env to be entered", metavar="ENV_ID"
+    )
+
+    parser_info = subparsers.add_parser("info", help="show info of a vuln env")
+    parser_info.set_defaults(func=src.cmds.info.handler)
+    parser_info.add_argument(
+        "env_id", help="id of the vuln env to be shown", metavar="ENV_ID"
+    )
+
+    parser_query = subparsers.add_parser("query", help="query a vulnerability")
+    parser_query.set_defaults(func=src.cmds.query.handler)
+    parser_query.add_argument(
+        "cve", help="query a vuln by CVE id", metavar="CVE-XXXX-XXXX"
+    )
+    parser_query.add_argument(
+        "--list-cfg",
+        action="store_true",
+        help="list CVE related kernel configs for a vuln env",
+    )
+    parser_query.add_argument(
+        "-e",
+        "--env",
+        help="specify a vuln env id",
+        metavar="ENV_ID",
+        required=False,
+    )
+    parser_query.add_argument(
+        "-a",
+        "--arch",
+        help="specify an architecture",
+        metavar="ARCH",
+        default="x86",
+        required=False,
+    )
+    parser_query.add_argument(
+        "-k",
+        "--kernel",
+        help="specify a kernel version",
+        metavar="x.xx.xx",
+        required=False,
+    )
+
+    parser_query.add_argument(
+        "--check-vuln-nvd",
+        action="store_true",
+        help="check if a kernel version is vulnerable to a CVE based on NVD data",
+    )
+    parser_query.add_argument(
+        "--check-vuln-patch",
+        action="store_true",
+        help="check if a kernel version is vulnerable to a CVE based on patch",
+    )
+
+    args = parser.parse_args()
+    try:
+        args.func(args)
+    except KeyboardInterrupt:
+        logger.warning("Bye")
+        sys.exit(1)
+    except:
+        raise
+
+
+if __name__ == "__main__":
+    main()
