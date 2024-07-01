@@ -43,6 +43,19 @@ vuln_range_funcs = {
 }
 
 
+def get_local_cve_record(cve):
+    """
+    Get local CVE record.
+    """
+    try:
+        with open(f"{VULN_DESC_DIR}/{cve.split('-')[1]}/{cve}.yaml", "r") as f:
+            vuln_desc = yaml.safe_load(f)
+    except FileNotFoundError:
+        logger.error(f"Vuln desc for {cve} does not exist")
+        return None
+    return vuln_desc
+
+
 def get_vuln_version_list(cve, vuln_ranges):
     """
     Given a list of [versionStart, versionEnd, lambda func],
@@ -197,6 +210,11 @@ def diff_cve_list(new_list):
         old = yaml.safe_load(f)
     if old:
         old_list = [item["cve"] for item in old]
+        # check the cve file, if the vulnStatus is 'Awaiting Analysis', then remove it
+        for item in old:
+            if (vuln_desc := get_local_cve_record(item["cve"])) is not None:
+                if vuln_desc.get("vulnStatus") == "Awaiting Analysis":
+                    old_list.remove(item["cve"])
     else:
         old_list = list()
     return sorted(list(set(new_list) - set(old_list)))
@@ -206,13 +224,9 @@ def get_vuln_ranges(cve):
     """
     Get vulnerable version ranges from local vuln desc.
     """
-    # load vuln desc (if it does not exist, then return None)
-    try:
-        with open(f"{VULN_DESC_DIR}/{cve.split('-')[1]}/{cve}.yaml", "r") as f:
-            vuln_desc = yaml.safe_load(f)
-    except (FileNotFoundError, IndexError) as e:
-        logger.error(f"Vuln desc for {cve} does not exist")
+    if (vuln_desc := get_local_cve_record(cve)) is None:
         return None
+
     # get vulnerable version ranges
     vuln_ranges = list()
     try:
@@ -450,11 +464,7 @@ def get_cve_info(cve):
     """
     Query a CVE.
     """
-    try:
-        with open(f"{VULN_DESC_DIR}/{cve.split('-')[1]}/{cve}.yaml", "r") as f:
-            vuln_desc = yaml.safe_load(f)
-    except FileNotFoundError:
-        logger.error(f"Vuln desc for {cve} does not exist")
+    if (vuln_desc := get_local_cve_record(cve)) is None:
         return None
     description = None
     for desc in vuln_desc["descriptions"]:
