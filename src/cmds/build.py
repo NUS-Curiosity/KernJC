@@ -15,6 +15,7 @@ logger = configure_logger("cmd_build")
 def handler(args):
     start_time = time.time()
     cve = args.cve.upper()
+    logger.debug(f"Building environment for {cve}")
     if args.allyesconfig:
         opt = BUILD_OPT_ALLYES
     elif args.defconfig:
