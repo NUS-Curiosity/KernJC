@@ -447,7 +447,10 @@ def apply_custom_config(env_id):
         res_config = yaml.safe_load(f)
     # generate configs for CVE based on kcfg graph
     logger.debug("Generating potential configs based on kcfg graph")
+    start_time = time.time()
     kcfgs = vuln_manager.get_cve_cfgs(cve=cve, env_id=env_id, arch="x86")
+    end_time = time.time()
+    logger.info(f"Config identification time: {end_time - start_time} seconds")
     if kcfgs:
         # TODO: currently we only consider "y"
         kcfgs_dict = {f"CONFIG_{kcfg}": "y" for kcfg in kcfgs}
@@ -520,7 +523,10 @@ def build_kernel(env_id, opt=BUILD_OPT_KJC):
             apply_custom_config(env_id)
             subprocess.run(["make", "olddefconfig"], check=True)
 
+        start_time = time.time()
         subprocess.run(["make", "-j$(nproc)"], shell=True, check=True)
+        end_time = time.time()
+        logger.info(f"Kernel build time: {end_time - start_time} seconds")
 
         logger.info("Built kernel source code")
 
