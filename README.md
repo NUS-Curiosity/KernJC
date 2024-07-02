@@ -30,7 +30,7 @@ KernJC is designed to run on Linux hosts with Intel/AMD CPUs. Currently only Ubu
 Install system-level dependencies:
 
 ```bash
-sudo apt-get install -y git build-essential libssl-dev libncurses5-dev flex bison libelf-dev qemu-system qemu-utils gcc g++ make python3 python3-pip debootstrap gcc-multilib
+sudo apt-get install -y git build-essential libssl-dev libncurses5-dev flex bison libelf-dev qemu-system qemu-utils gcc g++ make python3 python3-pip debootstrap gcc-multilib bc
 pip3 install virtualenv
 ```
 
