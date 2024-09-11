@@ -6039,6 +6039,11 @@
   patch: []
 - cve: CVE-2021-4440
   patch: []
+- cve: CVE-2021-4441
+  patch:
+  - ab3824427b848da10e9fe2727f035bbeecae6ff4
+- cve: CVE-2021-4442
+  patch: []
 - cve: CVE-2021-44733
   patch:
   - dfd0743f1d9ea76931510ed150334d571fbab49d
@@ -8111,6 +8116,14 @@
 - cve: CVE-2021-47620
   patch:
   - 899663be5e75dc0174dc8bda0b5e6826edf0b29a
+- cve: CVE-2021-47622
+  patch:
+  - 945c3cca05d78351bba29fa65d93834cb7934c7b
+- cve: CVE-2021-47623
+  patch:
+  - aec982603aa8cc0a21143681feb5f60ecc69d718
+- cve: CVE-2021-47624
+  patch: []
 - cve: CVE-2022-0001
   patch:
   - 1e19da8522c81bf46b335f84137165741e0d82b7
@@ -9508,6 +9521,496 @@
   - a0f90c8815706981c483a652a6aefca51a5e191c
 - cve: CVE-2022-48772
   patch: []
+- cve: CVE-2022-48773
+  patch:
+  - a9c10b5b3b67b3750a10c8b089b2e05f5e176e33
+- cve: CVE-2022-48774
+  patch:
+  - 3c62fd3406e0b2277c76a6984d3979c7f3f1d129
+- cve: CVE-2022-48775
+  patch:
+  - 8bc69f86328e87a0ffa79438430cc82f3aa6a194
+- cve: CVE-2022-48776
+  patch:
+  - 3dd8ba961b9356c4113b96541c752c73d98fef70
+- cve: CVE-2022-48777
+  patch: []
+- cve: CVE-2022-48778
+  patch:
+  - 9161f365c91614e5a3f5c6dcc44c3b1b33bc59c0
+- cve: CVE-2022-48779
+  patch:
+  - ef57640575406f57f5b3393cf57f457b0ace837e
+- cve: CVE-2022-48780
+  patch:
+  - 1de9770d121ee9294794cca0e0be8fbfa0134ee8
+- cve: CVE-2022-48781
+  patch: []
+- cve: CVE-2022-48782
+  patch:
+  - 7e5b6a5c8c44310784c88c1c198dde79f6402f7b
+- cve: CVE-2022-48783
+  patch:
+  - 8c6ae46150a453f8ae9a6cd49b45f354f478587d
+- cve: CVE-2022-48784
+  patch:
+  - f0a6fd1527067da537e9c48390237488719948ed
+- cve: CVE-2022-48785
+  patch:
+  - 26394fc118d6115390bd5b3a0fb17096271da227
+- cve: CVE-2022-48786
+  patch:
+  - b9208492fcaecff8f43915529ae34b3bcb03877c
+- cve: CVE-2022-48787
+  patch:
+  - bea2662e7818e15d7607d17d57912ac984275d94
+- cve: CVE-2022-48788
+  patch:
+  - b6bb1722f34bbdbabed27acdceaf585d300c5fd2
+- cve: CVE-2022-48789
+  patch:
+  - ff9fc7ebf5c06de1ef72a69f9b1ab40af8b07f9e
+- cve: CVE-2022-48790
+  patch:
+  - 0fa0f99fc84e41057cbdd2efbfe91c6b2f47dd9d
+- cve: CVE-2022-48791
+  patch:
+  - 61f162aa4381845acbdc7f2be4dfb694d027c018
+- cve: CVE-2022-48792
+  patch:
+  - df7abcaa1246e2537ab4016077b5443bb3c09378
+- cve: CVE-2022-48793
+  patch:
+  - e1779c2714c3023e4629825762bcbc43a3b943df
+- cve: CVE-2022-48794
+  patch:
+  - e5ce576d45bf72fd0e3dc37eff897bfcc488f6a9
+- cve: CVE-2022-48795
+  patch:
+  - b7d6f44a0fa716a82969725516dc0b16bc7cd514
+- cve: CVE-2022-48796
+  patch:
+  - b54240ad494300ff0994c4539a531727874381f4
+- cve: CVE-2022-48797
+  patch:
+  - 80d47f5de5e311cbc0d01ebb6ee684e8f4c196c6
+- cve: CVE-2022-48798
+  patch:
+  - dd9cb842fa9d90653a9b48aba52f89c069f3bc50
+- cve: CVE-2022-48799
+  patch:
+  - 5f4e5ce638e6a490b976ade4a40017b40abb2da0
+- cve: CVE-2022-48800
+  patch:
+  - b485c6f1f9f54b81443efda5f3d8a5036ba2cd91
+- cve: CVE-2022-48801
+  patch:
+  - c72ea20503610a4a7ba26c769357d31602769c01
+- cve: CVE-2022-48802
+  patch:
+  - 24d7275ce2791829953ed4e72f68277ceb2571c6
+- cve: CVE-2022-48803
+  patch:
+  - 6d1e6bcb31663ee83aaea1f171f3dbfe95dd4a69
+- cve: CVE-2022-48804
+  patch:
+  - 61cc70d9e8ef5b042d4ed87994d20100ec8896d9
+- cve: CVE-2022-48805
+  patch:
+  - 57bc3d3ae8c14df3ceb4e17d26ddf9eeab304581
+- cve: CVE-2022-48806
+  patch:
+  - c0689e46be23160d925dca95dfc411f1a0462708
+- cve: CVE-2022-48807
+  patch:
+  - bea1898f65b9b7096cb4e73e97c83b94718f1fa1
+- cve: CVE-2022-48808
+  patch:
+  - ee534378f00561207656663d93907583958339ae
+- cve: CVE-2022-48809
+  patch:
+  - 9eeabdf17fa0ab75381045c867c370f4cc75a613
+- cve: CVE-2022-48810
+  patch:
+  - 5611a00697c8ecc5aad04392bea629e9d6a20463
+- cve: CVE-2022-48811
+  patch:
+  - 61772b0908c640d0309c40f7d41d062ca4e979fa
+- cve: CVE-2022-48812
+  patch:
+  - 0d120dfb5d67edc5bcd1804e167dba2b30809afd
+- cve: CVE-2022-48813
+  patch:
+  - 209bdb7ec6a28c7cdf580a0a98afbc9fc3b98932
+- cve: CVE-2022-48814
+  patch:
+  - bd488afc3b39e045ba71aab472233f2a78726e7b
+- cve: CVE-2022-48815
+  patch:
+  - 08f1a20822349004bb9cc1b153ecb516e9f2889d
+- cve: CVE-2022-48816
+  patch:
+  - b49ea673e119f59c71645e2f65b3ccad857c90ee
+- cve: CVE-2022-48817
+  patch:
+  - 50facd86e9fbc4b93fe02e5fe05776047f45dbfb
+- cve: CVE-2022-48818
+  patch:
+  - f53a2ce893b2c7884ef94471f170839170a4eba0
+- cve: CVE-2022-48819
+  patch:
+  - f8d9d938514f46c4892aff6bfe32f425e84d81cc
+- cve: CVE-2022-48820
+  patch:
+  - cfc826c88a79e22ba5d8001556eb2c7efd8a01b6
+- cve: CVE-2022-48821
+  patch:
+  - 46963e2e0629cb31c96b1d47ddd89dc3d8990b34
+- cve: CVE-2022-48822
+  patch:
+  - ebe2b1add1055b903e2acd86b290a85297edc0b3
+- cve: CVE-2022-48823
+  patch:
+  - 5239ab63f17cee643bd4bf6addfedebaa7d4f41e
+- cve: CVE-2022-48824
+  patch:
+  - 4db09593af0b0b4d7d4805ebb3273df51d7cc30d
+- cve: CVE-2022-48825
+  patch:
+  - b70a99fd13282d7885f69bf1372e28b7506a1613
+- cve: CVE-2022-48826
+  patch:
+  - 0a3d12ab5097b1d045e693412e6b366b7e82031b
+- cve: CVE-2022-48827
+  patch:
+  - 0cb4d23ae08c48f6bf3c29a8e5c4a74b8388b960
+- cve: CVE-2022-48828
+  patch:
+  - e6faac3f58c7c4176b66f63def17a34232a17b0e
+- cve: CVE-2022-48829
+  patch:
+  - a648fdeb7c0e17177a2280344d015dba3fbe3314
+- cve: CVE-2022-48830
+  patch:
+  - 7c759040c1dd03954f650f147ae7175476d51314
+- cve: CVE-2022-48831
+  patch:
+  - 926fd9f23b27ca6587492c3f58f4c7f4cd01dad5
+- cve: CVE-2022-48832
+  patch:
+  - 7a82f89de92aac5a244d3735b2bd162c1147620c
+- cve: CVE-2022-48833
+  patch:
+  - 40cdc509877bacb438213b83c7541c5e24a1d9ec
+- cve: CVE-2022-48834
+  patch:
+  - e9b667a82cdcfe21d590344447d65daed52b353b
+- cve: CVE-2022-48835
+  patch:
+  - 69ad4ef868c1fc7609daa235dfa46d28ba7a3ba3
+- cve: CVE-2022-48836
+  patch:
+  - 5600f6986628dde8881734090588474f54a540a8
+- cve: CVE-2022-48837
+  patch:
+  - 65f3324f4b6fed78b8761c3b74615ecf0ffa81fa
+- cve: CVE-2022-48838
+  patch:
+  - 16b1941eac2bd499f065a6739a40ce0011a3d740
+- cve: CVE-2022-48839
+  patch:
+  - c700525fcc06b05adfea78039de02628af79e07a
+- cve: CVE-2022-48840
+  patch:
+  - b04683ff8f0823b869c219c78ba0d974bddea0b5
+- cve: CVE-2022-48841
+  patch:
+  - f153546913bada41a811722f2c6d17c3243a0333
+- cve: CVE-2022-48842
+  patch:
+  - 5cb1ebdbc4342b1c2ce89516e19808d64417bdbc
+- cve: CVE-2022-48843
+  patch:
+  - 62929726ef0ec72cbbe9440c5d125d4278b99894
+- cve: CVE-2022-48844
+  patch:
+  - dd3b1dc3dd050f1f47cd13e300732852414270f8
+- cve: CVE-2022-48845
+  patch:
+  - f2703def339c793674010cc9f01bfe4980231808
+- cve: CVE-2022-48846
+  patch:
+  - daaca3522a8e67c46e39ef09c1d542e866f85f3b
+- cve: CVE-2022-48847
+  patch:
+  - c993ee0f9f81caf5767a50d1faeba39a0dc82af2
+- cve: CVE-2022-48848
+  patch:
+  - f0cfe17bcc1dd2f0872966b554a148e888833ee9
+- cve: CVE-2022-48849
+  patch:
+  - e2b993302f40c4eb714ecf896dd9e1c5be7d4cd7
+- cve: CVE-2022-48850
+  patch:
+  - 4224cfd7fb6523f7a9d1c8bb91bb5df1e38eb624
+- cve: CVE-2022-48851
+  patch:
+  - fc7f750dc9d102c1ed7bbe4591f991e770c99033
+- cve: CVE-2022-48852
+  patch:
+  - e40945ab7c7f966d0c37b7bd7b0596497dfe228d
+- cve: CVE-2022-48853
+  patch:
+  - ddbd89deb7d32b1fbb879f48d68fda1a8ac58e8e
+- cve: CVE-2022-48854
+  patch:
+  - bc0e610a6eb0d46e4123fafdbe5e6141d9fff3be
+- cve: CVE-2022-48855
+  patch:
+  - 633593a808980f82d251d0ca89730d8bb8b0220c
+- cve: CVE-2022-48856
+  patch:
+  - 2ac5b58e645c66932438bb021cb5b52097ce70b0
+- cve: CVE-2022-48857
+  patch:
+  - f80cfe2f26581f188429c12bd937eb905ad3ac7b
+- cve: CVE-2022-48858
+  patch:
+  - 063bd355595428750803d8736a9bb7c8db67d42d
+- cve: CVE-2022-48859
+  patch:
+  - c9ffa3e2bc451816ce0295e40063514fabf2bd36
+- cve: CVE-2022-48860
+  patch: []
+- cve: CVE-2022-48861
+  patch:
+  - eb057b44dbe35ae14527830236a92f51de8f9184
+- cve: CVE-2022-48862
+  patch:
+  - e2ae38cf3d91837a493cb2093c87700ff3cbe667
+- cve: CVE-2022-48863
+  patch:
+  - c6a502c2299941c8326d029cfc8a3bc8a4607ad5
+- cve: CVE-2022-48864
+  patch:
+  - ed0f849fc3a63ed2ddf5e72cdb1de3bdbbb0f8eb
+- cve: CVE-2022-48865
+  patch:
+  - be4977b847f5d5cedb64d50eaaf2218c3a55a3a3
+- cve: CVE-2022-48866
+  patch:
+  - fc3ef2e3297b3c0e2006b5d7b3d66965e3392036
+- cve: CVE-2022-48867
+  patch:
+  - 1beeec45f9ac31eba52478379f70a5fa9c2ad005
+- cve: CVE-2022-48868
+  patch:
+  - b51b75f0604f17c0f6f3b6f68f1a521a5cc6b04f
+- cve: CVE-2022-48869
+  patch:
+  - d18dcfe9860e842f394e37ba01ca9440ab2178f4
+- cve: CVE-2022-48870
+  patch: []
+- cve: CVE-2022-48871
+  patch:
+  - b8caf69a6946e18ffebad49847e258f5b6d52ac2
+- cve: CVE-2022-48872
+  patch:
+  - 96b328d119eca7563c1edcc4e1039a62e6370ecb
+- cve: CVE-2022-48873
+  patch:
+  - 5bb96c8f9268e2fdb0e5321cbc358ee5941efc15
+- cve: CVE-2022-48874
+  patch:
+  - 9446fa1683a7e3937d9970248ced427c1983a1c5
+- cve: CVE-2022-48875
+  patch:
+  - 69403bad97aa0162e3d7911b27e25abe774093df
+- cve: CVE-2022-48876
+  patch:
+  - e66b7920aa5ac5b1a1997a454004ba9246a3c005
+- cve: CVE-2022-48877
+  patch:
+  - df9d44b645b83fffccfb4e28c1f93376585fdec8
+- cve: CVE-2022-48878
+  patch: []
+- cve: CVE-2022-48879
+  patch:
+  - 703c13fe3c9af557d312f5895ed6a5fda2711104
+- cve: CVE-2022-48880
+  patch: []
+- cve: CVE-2022-48881
+  patch:
+  - ccb32e2be14271a60e9ba89c6d5660cc9998773c
+- cve: CVE-2022-48882
+  patch:
+  - 9828994ac492e8e7de47fe66097b7e665328f348
+- cve: CVE-2022-48883
+  patch:
+  - 31c70bfe58ef09fe36327ddcced9143a16e9e83d
+- cve: CVE-2022-48884
+  patch:
+  - da2e552b469a0cd130ff70a88ccc4139da428a65
+- cve: CVE-2022-48885
+  patch:
+  - f58985620f55580a07d40062c4115d8c9cf6ae27
+- cve: CVE-2022-48886
+  patch:
+  - 40543b3d9d2c13227ecd3aa90a713c201d1d7f09
+- cve: CVE-2022-48887
+  patch:
+  - a309c7194e8a2f8bd4539b9449917913f6c2cd50
+- cve: CVE-2022-48888
+  patch:
+  - 45dac1352b55b1d8cb17f218936b2bc2bc1fb4ee
+- cve: CVE-2022-48889
+  patch:
+  - 3e78986a840d59dd27e636eae3f52dc11125c835
+- cve: CVE-2022-48890
+  patch:
+  - 67ff3d0a49f3d445c3922e30a54e03c161da561e
+- cve: CVE-2022-48891
+  patch:
+  - 02228f6aa6a64d588bc31e3267d05ff184d772eb
+- cve: CVE-2022-48892
+  patch:
+  - 87ca4f9efbd7cc649ff43b87970888f2812945b8
+- cve: CVE-2022-48893
+  patch:
+  - 78a033433a5ae4fee85511ee075bc9a48312c79e
+- cve: CVE-2022-48894
+  patch:
+  - 32ea2c57dc216b6ad8125fa680d31daa5d421c95
+- cve: CVE-2022-48895
+  patch:
+  - ce31e6ca68bd7639bd3e5ef97be215031842bbab
+- cve: CVE-2022-48896
+  patch:
+  - b93fb4405fcb5112c5739c5349afb52ec7f15c07
+- cve: CVE-2022-48897
+  patch:
+  - 74c2f81054510d45b813548cb0a1c4ebf87cdd5f
+- cve: CVE-2022-48898
+  patch:
+  - 1cba0d150fa102439114a91b3e215909efc9f169
+- cve: CVE-2022-48899
+  patch:
+  - 52531258318ed59a2dc5a43df2eaf0eb1d65438e
+- cve: CVE-2022-48901
+  patch: []
+- cve: CVE-2022-48902
+  patch:
+  - a50e1fcbc9b85fd4e95b89a75c0884cb032a3e06
+- cve: CVE-2022-48903
+  patch:
+  - 5fd76bf31ccfecc06e2e6b29f8c809e934085b99
+- cve: CVE-2022-48904
+  patch:
+  - 6b0b2d9a6a308bcd9300c2d83000a82812c56cea
+- cve: CVE-2022-48905
+  patch: []
+- cve: CVE-2022-48906
+  patch:
+  - 877d11f0332cd2160e19e3313e262754c321fa36
+- cve: CVE-2022-48907
+  patch:
+  - 898c0a15425a5bcaa8d44bd436eae5afd2483796
+- cve: CVE-2022-48908
+  patch: []
+- cve: CVE-2022-48909
+  patch:
+  - 9f1c50cf39167ff71dc5953a3234f3f6eeb8fcb5
+- cve: CVE-2022-48910
+  patch:
+  - 9995b408f17ff8c7f11bc725c8aa225ba3a63b1c
+- cve: CVE-2022-48911
+  patch:
+  - c3873070247d9e3c7a6b0cf9bf9b45e8018427b1
+- cve: CVE-2022-48912
+  patch: []
+- cve: CVE-2022-48913
+  patch:
+  - 30939293262eb433c960c4532a0d59c4073b2b84
+- cve: CVE-2022-48914
+  patch:
+  - dcf4ff7a48e7598e6b10126cc02177abb8ae4f3f
+- cve: CVE-2022-48915
+  patch:
+  - 5838a14832d447990827d85e90afe17e6fb9c175
+- cve: CVE-2022-48916
+  patch: []
+- cve: CVE-2022-48917
+  patch:
+  - 9bdd10d57a8807dba0003af0325191f3cec0f11c
+- cve: CVE-2022-48918
+  patch:
+  - 5a6248c0a22352f09ea041665d3bd3e18f6f872c
+- cve: CVE-2022-48919
+  patch:
+  - 3d6cc9898efdfb062efb74dc18cfc700e082f5d5
+- cve: CVE-2022-48920
+  patch:
+  - a0f0cf8341e34e5d2265bfd3a7ad68342da1e2aa
+- cve: CVE-2022-48921
+  patch: []
+- cve: CVE-2022-48922
+  patch: []
+- cve: CVE-2022-48923
+  patch: []
+- cve: CVE-2022-48924
+  patch: []
+- cve: CVE-2022-48925
+  patch:
+  - 22e9f71072fa605cbf033158db58e0790101928d
+- cve: CVE-2022-48926
+  patch:
+  - aaaba1c86d04dac8e49bf508b492f81506257da3
+- cve: CVE-2022-48927
+  patch:
+  - b7a78a8adaa8849c02f174d707aead0f85dca0da
+- cve: CVE-2022-48928
+  patch:
+  - e0a2e37f303828d030a83f33ffe14b36cb88d563
+- cve: CVE-2022-48929
+  patch:
+  - 45ce4b4f9009102cd9f581196d480a59208690c1
+  - 8c39925e98d498b9531343066ef82ae39e41adae
+- cve: CVE-2022-48930
+  patch: []
+- cve: CVE-2022-48931
+  patch: []
+- cve: CVE-2022-48932
+  patch:
+  - 0aec12d97b2036af0946e3d582144739860ac07b
+- cve: CVE-2022-48933
+  patch: []
+- cve: CVE-2022-48934
+  patch:
+  - 3a14d0888eb4b0045884126acc69abfb7b87814d
+- cve: CVE-2022-48935
+  patch: []
+- cve: CVE-2022-48937
+  patch:
+  - f240762f88b4b1b58561939ffd44837759756477
+- cve: CVE-2022-48938
+  patch: []
+- cve: CVE-2022-48939
+  patch: []
+- cve: CVE-2022-48940
+  patch:
+  - a8abb0c3dc1e28454851a00f8b7333d9695d566c
+- cve: CVE-2022-48941
+  patch:
+  - fadead80fe4c033b5e514fcbadd20b55c4494112
+- cve: CVE-2022-48942
+  patch:
+  - 1b5f517cca36292076d9e38fa6e33a257703e62e
+- cve: CVE-2022-48943
+  patch:
+  - 6f3c1fc53d86d580d8d6d749c4af23705e4f6f79
+- cve: CVE-2022-48944
+  patch:
+  - b1e8206582f9d680cff7d04828708c8b6ab32957
 - cve: CVE-2023-0030
   patch: []
 - cve: CVE-2023-0045
@@ -11444,6 +11947,92 @@
   patch: []
 - cve: CVE-2023-52884
   patch: []
+- cve: CVE-2023-52885
+  patch:
+  - fc80fc2d4e39137869da3150ee169b40bf879287
+- cve: CVE-2023-52886
+  patch:
+  - ff33299ec8bb80cdcc073ad9c506bd79bb2ed20b
+- cve: CVE-2023-52887
+  patch:
+  - d3e2904f71ea0fe7eaff1d68a2b0363c888ea0fb
+- cve: CVE-2023-52888
+  patch:
+  - eb005c801ec70ff4307727bd3bd6e8280169ef32
+- cve: CVE-2023-52889
+  patch:
+  - fce09ea314505a52f2436397608fa0a5d0934fb1
+- cve: CVE-2023-52893
+  patch:
+  - a769b05eeed7accc4019a1ed9799dd72067f1ce8
+- cve: CVE-2023-52894
+  patch:
+  - c6ec929595c7443250b2a4faea988c62019d5cd2
+- cve: CVE-2023-52895
+  patch:
+  - 8caa03f10bf92cb8657408a6ece6a8a73f96ce13
+- cve: CVE-2023-52896
+  patch:
+  - b7adbf9ada3513d2092362c8eac5cddc5b651f5c
+- cve: CVE-2023-52897
+  patch:
+  - 75181406b4eafacc531ff2ee5fb032bd93317e2b
+- cve: CVE-2023-52898
+  patch:
+  - a2bc47c43e70cf904b1af49f76d572326c08bca7
+- cve: CVE-2023-52899
+  patch:
+  - 57054fe516d59d03a7bcf1888e82479ccc244f87
+- cve: CVE-2023-52900
+  patch:
+  - 7633355e5c7f29c049a9048e461427d1d8ed3051
+- cve: CVE-2023-52901
+  patch:
+  - e8fb5bc76eb86437ab87002d4a36d6da02165654
+- cve: CVE-2023-52902
+  patch:
+  - 7f31cced5724e6d414fe750aa1cd7e7b578ec22f
+- cve: CVE-2023-52903
+  patch:
+  - 544d163d659d45a206d8929370d5a2984e546cb7
+- cve: CVE-2023-52904
+  patch:
+  - 92a9c0ad86d47ff4cce899012e355c400f02cfb8
+- cve: CVE-2023-52905
+  patch:
+  - 53da7aec32982f5ee775b69dce06d63992ce4af3
+- cve: CVE-2023-52906
+  patch:
+  - 9e17f99220d111ea031b44153fdfe364b0024ff2
+- cve: CVE-2023-52907
+  patch:
+  - 9dab880d675b9d0dd56c6428e4e8352a3339371d
+- cve: CVE-2023-52908
+  patch:
+  - 0be7ed8e7eb15282b5d0f6fdfea884db594ea9bf
+- cve: CVE-2023-52909
+  patch:
+  - 0b3a551fa58b4da941efeb209b3770868e2eddd7
+- cve: CVE-2023-52910
+  patch:
+  - dcdb3ba7e2a8caae7bfefd603bc22fd0ce9a389c
+- cve: CVE-2023-52911
+  patch:
+  - 00dd060ab3cf95ca6ede7853bc14397014971b5e
+- cve: CVE-2023-52912
+  patch:
+  - 99f1a36c90a7524972be5a028424c57fa17753ee
+- cve: CVE-2023-52913
+  patch:
+  - afce71ff6daa9c0f852df0727fe32c6fb107f0fa
+- cve: CVE-2023-52914
+  patch:
+  - febb985c06cb6f5fac63598c0bffd4fd823d110d
+- cve: CVE-2023-52915
+  patch: []
+- cve: CVE-2023-52916
+  patch:
+  - c281355068bc258fd619c5aefd978595bede7bfe
 - cve: CVE-2023-5345
   patch:
   - e6e43b8aa7cd3c3af686caf0c2e11819a886d705
@@ -11577,7 +12166,8 @@
   patch:
   - 2535b848fa0f42ddff3e5255cf5e742c9b77bb26
 - cve: CVE-2024-22386
-  patch: []
+  patch:
+  - 2e63972a2de14482d0eae1a03a73e379f1c3f44c
 - cve: CVE-2024-22705
   patch:
   - d10c77873ba1e9e6b91905018e29e196fd5f863d
@@ -11629,7 +12219,8 @@
 - cve: CVE-2024-25740
   patch: []
 - cve: CVE-2024-25741
-  patch: []
+  patch:
+  - e587a7633dfee8987a999cf253f7c52a8e09276c
 - cve: CVE-2024-25744
   patch:
   - b82a8dbd3d2f4563156f7150c6f2ecab6e960b30
@@ -12881,7 +13472,8 @@
   patch:
   - c0205eaf3af9f5db14d4b5ee4abacf4a583c3c50
 - cve: CVE-2024-27008
-  patch: []
+  patch:
+  - cf92bb778eda7830e79452c6917efa8474a30c1e
 - cve: CVE-2024-27009
   patch:
   - 2d8527f2f911fab84aec04df4788c0c23af3df48
@@ -13093,7 +13685,8 @@
   patch:
   - 8cf9c5051076e0eb958f4361d50d8b0c3ee6691c
 - cve: CVE-2024-27079
-  patch: []
+  patch:
+  - 81e921fd321614c2ad8ac333b041aae1da7a1c6d
 - cve: CVE-2024-27080
   patch:
   - 978b63f7464abcfd364a6c95f734282c50f3decf
@@ -13122,7 +13715,8 @@
   patch:
   - 5ea7b72d4fac2fdbc0425cd8f2ea33abe95235b2
 - cve: CVE-2024-27396
-  patch: []
+  patch:
+  - f2a904107ee2b647bb7794a1a82b67740d7c8a64
 - cve: CVE-2024-27397
   patch:
   - 7395dfacfff65e9938ac0889dafa1ab01e987d15
@@ -13211,7 +13805,8 @@
   patch:
   - a39d51ff1f52cd0b6fe7d379ac93bd8b4237d1b7
 - cve: CVE-2024-27437
-  patch: []
+  patch:
+  - fe9a7082684eb059b925c535682e68c34d487d43
 - cve: CVE-2024-31076
   patch:
   - a6c11c0a5235fb144a65e0cb2ffd360ddc1f6c32
@@ -13312,7 +13907,8 @@
   patch:
   - cd32b27a66db8776d8b8e82ec7d7dde97a8693b0
 - cve: CVE-2024-35809
-  patch: []
+  patch:
+  - 9d5286d4e7f68beab450deddbb6a32edd5ecf4bf
 - cve: CVE-2024-35810
   patch:
   - 9a9e8a7159ca09af9b1a300a6c8e8b6ff7501c76
@@ -13320,7 +13916,8 @@
   patch:
   - 0f7352557a35ab7888bc7831411ec8a3cbe20d78
 - cve: CVE-2024-35813
-  patch: []
+  patch:
+  - cf55a7acd1ed38afe43bba1c8a0935b51d1dc014
 - cve: CVE-2024-35814
   patch:
   - 04867a7a33324c9c562ee7949dbcaab7aaad1fb4
@@ -13983,7 +14580,8 @@
   patch:
   - 195aba96b854dd664768f382cd1db375d8181f88
 - cve: CVE-2024-36478
-  patch: []
+  patch:
+  - a2db328b0839312c169eb42746ec46fc1ab53ed2
 - cve: CVE-2024-36479
   patch:
   - 1da11f822042eb6ef4b6064dc048f157a7852529
@@ -14303,17 +14901,20 @@
   patch:
   - c8ea2c31f5ea437199b239d76ad5db27343edb0c
 - cve: CVE-2024-37078
-  patch: []
+  patch:
+  - a4ca369ca221bb7e06c725792ac107f0e48e82e7
 - cve: CVE-2024-37353
   patch:
   - 89875151fccdd024d571aa884ea97a0128b968b6
 - cve: CVE-2024-37354
-  patch: []
+  patch:
+  - 9d274c19a71b3a276949933859610721a453946b
 - cve: CVE-2024-37356
   patch:
   - 3ebc46ca8675de6378e3f8f40768e180bb8afa66
 - cve: CVE-2024-38306
-  patch: []
+  patch:
+  - f3a5367c679d31473d3fbb391675055b4792c309
 - cve: CVE-2024-38381
   patch:
   - e4a87abf588536d1cdfb128595e6e680af5cf3ed
@@ -14321,7 +14922,8 @@
   patch:
   - d0aac2363549e12cc79b8e285f13d5a9f42fd08e
 - cve: CVE-2024-38385
-  patch: []
+  patch:
+  - b84a8aba806261d2f759ccedf4a2a6a80a5e55ba
 - cve: CVE-2024-38388
   patch:
   - 172811e3a557d8681a5e2d0f871dc04a2d17eb13
@@ -14635,7 +15237,8 @@
   patch:
   - e8021b94b0412c37bcc79027c2e382086b6ce449
 - cve: CVE-2024-38661
-  patch: []
+  patch:
+  - d4f9d5a99a3fd1b1c691b7a1a6f8f3f25f4116c9
 - cve: CVE-2024-38662
   patch:
   - 98e948fb60d41447fd8d2d0c3b8637fc6b6dc26d
@@ -14662,36 +15265,1824 @@
 - cve: CVE-2024-39292
   patch: []
 - cve: CVE-2024-39293
-  patch: []
+  patch:
+  - 7fcf26b315bbb728036da0862de6b335da83dff2
 - cve: CVE-2024-39296
-  patch: []
+  patch:
+  - a45835a0bb6ef7d5ddbc0714dd760de979cb6ece
 - cve: CVE-2024-39298
-  patch: []
+  patch:
+  - 8cf360b9d6a840700e06864236a01a883b34bbad
 - cve: CVE-2024-39301
-  patch: []
+  patch:
+  - 25460d6f39024cc3b8241b14c7ccf0d6f11a736a
 - cve: CVE-2024-39362
-  patch: []
+  patch:
+  - 3f858bbf04dbac934ac279aaee05d49eb9910051
 - cve: CVE-2024-39371
-  patch: []
+  patch:
+  - 5fc16fa5f13b3c06fdb959ef262050bd810416a2
 - cve: CVE-2024-39461
-  patch: []
+  patch:
+  - 6dc445c1905096b2ed4db1a84570375b4e00cc0f
 - cve: CVE-2024-39462
-  patch: []
+  patch:
+  - 9368cdf90f52a68120d039887ccff74ff33b4444
 - cve: CVE-2024-39463
-  patch: []
+  patch:
+  - c898afdc15645efb555acb6d85b484eb40a45409
 - cve: CVE-2024-39464
-  patch: []
+  patch:
+  - 6d8acd02c4c6a8f917eefac1de2e035521ca119d
 - cve: CVE-2024-39465
-  patch: []
+  patch:
+  - 825fc49497957310e421454fe3fb8b8d8d8e2dd2
 - cve: CVE-2024-39466
-  patch: []
+  patch:
+  - d9d3490c48df572edefc0b64655259eefdcbb9be
 - cve: CVE-2024-39467
   patch: []
 - cve: CVE-2024-39468
-  patch: []
+  patch:
+  - 02c418774f76a0a36a6195c9dbf8971eb4130a15
 - cve: CVE-2024-39469
-  patch: []
+  patch:
+  - 7373a51e7998b508af7136530f3a997b286ce81c
 - cve: CVE-2024-39470
-  patch: []
+  patch:
+  - d4e9a968738bf66d3bb852dd5588d4c7afd6d7f4
 - cve: CVE-2024-39471
+  patch: []
+- cve: CVE-2024-39472
+  patch:
+  - 45cf976008ddef4a9c9a30310c9b4fb2a9a6602a
+- cve: CVE-2024-39473
+  patch:
+  - ffa077b2f6ad124ec3d23fbddc5e4b0ff2647af8
+- cve: CVE-2024-39474
+  patch:
+  - 8e0545c83d672750632f46e3f9ad95c48c91a0fc
+- cve: CVE-2024-39475
+  patch:
+  - 6ad959b6703e2c4c5d7af03b4cfd5ff608036339
+- cve: CVE-2024-39476
+  patch:
+  - 151f66bb618d1fd0eeb84acb61b4a9fa5d8bb0fa
+- cve: CVE-2024-39477
+  patch:
+  - 8daf9c702ee7f825f0de8600abff764acfedea13
+- cve: CVE-2024-39478
+  patch:
+  - d7f01649f4eaf1878472d3d3f480ae1e50d98f6c
+- cve: CVE-2024-39479
+  patch:
+  - 5bc9de065b8bb9b8dd8799ecb4592d0403b54281
+- cve: CVE-2024-39480
+  patch: []
+- cve: CVE-2024-39481
+  patch:
+  - 8a9d420149c477e7c97fbd6453704e4612bdd3fa
+- cve: CVE-2024-39482
+  patch:
+  - 3a861560ccb35f2a4f0a4b8207fa7c2a35fc7f31
+- cve: CVE-2024-39483
+  patch:
+  - b4bd556467477420ee3a91fbcba73c579669edc6
+- cve: CVE-2024-39484
+  patch:
+  - 55c421b364482b61c4c45313a535e61ed5ae4ea3
+- cve: CVE-2024-39485
+  patch:
+  - 9537a8425a7a0222999d5839a0b394b1e8834b4a
+- cve: CVE-2024-39486
+  patch:
+  - 4f2a129b33a2054e62273edd5a051c34c08d96e9
+- cve: CVE-2024-39487
+  patch:
+  - e271ff53807e8f2c628758290f0e499dbe51cb3d
+- cve: CVE-2024-39488
+  patch: []
+- cve: CVE-2024-39489
+  patch: []
+- cve: CVE-2024-39490
+  patch:
+  - 5447f9708d9e4c17a647b16a9cb29e9e02820bd9
+- cve: CVE-2024-39491
+  patch:
+  - d344873c4cbde249b7152d36a273bcc45864001e
+- cve: CVE-2024-39492
+  patch:
+  - 747a69a119c469121385543f21c2d08562968ccc
+- cve: CVE-2024-39493
+  patch: []
+- cve: CVE-2024-39494
+  patch: []
+- cve: CVE-2024-39495
+  patch:
+  - 5c9c5d7f26acc2c669c1dcf57d1bb43ee99220ce
+- cve: CVE-2024-39496
+  patch: []
+- cve: CVE-2024-39497
+  patch:
+  - 39bc27bd688066a63e56f7f64ad34fae03fbe3b8
+- cve: CVE-2024-39498
+  patch: []
+- cve: CVE-2024-39499
+  patch:
+  - 8003f00d895310d409b2bf9ef907c56b42a4e0f4
+- cve: CVE-2024-39500
+  patch:
+  - 4b4647add7d3c8530493f7247d11e257ee425bf0
+- cve: CVE-2024-39501
+  patch:
+  - c0a40097f0bc81deafc15f9195d1fb54595cd6d0
+- cve: CVE-2024-39502
+  patch:
+  - 79f18a41dd056115d685f3b0a419c7cd40055e13
+- cve: CVE-2024-39503
+  patch:
+  - 4e7aaa6b82d63e8ddcbfb56b4fd3d014ca586f10
+- cve: CVE-2024-39504
+  patch:
+  - c4ab9da85b9df3692f861512fe6c9812f38b7471
+- cve: CVE-2024-39505
+  patch:
+  - b880018edd3a577e50366338194dee9b899947e0
+- cve: CVE-2024-39506
+  patch:
+  - c44711b78608c98a3e6b49ce91678cd0917d5349
+- cve: CVE-2024-39507
+  patch:
+  - 12cda920212a49fa22d9e8b9492ac4ea013310a4
+- cve: CVE-2024-39508
+  patch:
+  - 8a565304927fbd28c9f028c492b5c1714002cbab
+- cve: CVE-2024-39509
+  patch:
+  - 4aa2dcfbad538adf7becd0034a3754e1bd01b2b5
+- cve: CVE-2024-39510
+  patch:
+  - da4a827416066191aafeeccee50a8836a826ba10
+- cve: CVE-2024-40899
+  patch:
+  - de3e26f9e5b76fc628077578c001c4a51bf54d06
+- cve: CVE-2024-40900
+  patch:
+  - 0fc75c5940fa634d84e64c93bfc388e1274ed013
+- cve: CVE-2024-40901
+  patch:
+  - 4254dfeda82f20844299dca6c38cbffcfd499f41
+- cve: CVE-2024-40902
+  patch:
+  - 7c55b78818cfb732680c4a72ab270cc2d2ee3d0f
+- cve: CVE-2024-40903
+  patch:
+  - e7e921918d905544500ca7a95889f898121ba886
+- cve: CVE-2024-40904
+  patch:
+  - 22f00812862564b314784167a89f27b444f82a46
+- cve: CVE-2024-40905
+  patch:
+  - b01e1c030770ff3b4fe37fc7cc6bca03f594133f
+- cve: CVE-2024-40906
+  patch:
+  - c8b3f38d2dae0397944814d691a419c451f9906f
+- cve: CVE-2024-40907
+  patch:
+  - 491aee894a08bc9b8bb52e7363b9d4bc6403f363
+- cve: CVE-2024-40908
+  patch:
+  - d0d1df8ba18abc57f28fb3bc053b2bf319367f2c
+- cve: CVE-2024-40909
+  patch:
+  - 2884dc7d08d98a89d8d65121524bb7533183a63a
+- cve: CVE-2024-40910
+  patch:
+  - 3c34fb0bd4a4237592c5ecb5b2e2531900c55774
+- cve: CVE-2024-40911
+  patch:
+  - 642f89daa34567d02f312d03e41523a894906dae
+- cve: CVE-2024-40912
+  patch:
+  - 44c06bbde6443de206b30f513100b5670b23fc5e
+- cve: CVE-2024-40913
+  patch:
+  - 4b4391e77a6bf24cba2ef1590e113d9b73b11039
+- cve: CVE-2024-40914
+  patch:
+  - fe6f86f4b40855a130a19aa589f9ba7f650423f4
+- cve: CVE-2024-40915
+  patch:
+  - fb1cf0878328fe75d47f0aed0a65b30126fcefc4
+- cve: CVE-2024-40916
+  patch:
+  - 799d4b392417ed6889030a5b2335ccb6dcf030ab
+- cve: CVE-2024-40917
+  patch:
+  - e0eec24e2e199873f43df99ec39773ad3af2bff7
+- cve: CVE-2024-40918
+  patch:
+  - 72d95924ee35c8cd16ef52f912483ee938a34d49
+- cve: CVE-2024-40919
+  patch:
+  - a9b9741854a9fe9df948af49ca5514e0ed0429df
+- cve: CVE-2024-40920
+  patch: []
+- cve: CVE-2024-40921
+  patch:
+  - 36c92936e868601fa1f43da6758cf55805043509
+- cve: CVE-2024-40922
+  patch:
+  - 54559642b96116b45e4b5ca7fd9f7835b8561272
+- cve: CVE-2024-40923
+  patch:
+  - ffbe335b8d471f79b259e950cb20999700670456
+- cve: CVE-2024-40924
+  patch:
+  - 43e2b37e2ab660c3565d4cff27922bc70e79c3f1
+- cve: CVE-2024-40925
+  patch:
+  - d0321c812d89c5910d8da8e4b10c891c6b96ff70
+- cve: CVE-2024-40926
+  patch:
+  - b96a225377b6602299a03d2ce3c289b68cd41bb7
+- cve: CVE-2024-40927
+  patch:
+  - 5ceac4402f5d975e5a01c806438eb4e554771577
+- cve: CVE-2024-40928
+  patch:
+  - 0dcc53abf58d572d34c5313de85f607cd33fc691
+- cve: CVE-2024-40929
+  patch:
+  - 60d62757df30b74bf397a2847a6db7385c6ee281
+- cve: CVE-2024-40930
+  patch:
+  - 4dc3a3893dae5a7f73e5809273aca0f1f3548d55
+- cve: CVE-2024-40931
+  patch:
+  - 8031b58c3a9b1db3ef68b3bd749fbee2e1e1aaa3
+- cve: CVE-2024-40932
+  patch:
+  - 38e3825631b1f314b21e3ade00b5a4d737eb054e
+- cve: CVE-2024-40933
+  patch:
+  - a23c14b062d8800a2192077d83273bbfe6c7552d
+- cve: CVE-2024-40934
+  patch:
+  - ce3af2ee95170b7d9e15fff6e500d67deab1e7b3
+- cve: CVE-2024-40935
+  patch:
+  - 85e833cd7243bda7285492b0653c3abb1e2e757b
+- cve: CVE-2024-40936
+  patch:
+  - 49ba7b515c4c0719b866d16f068e62d16a8a3dd1
+- cve: CVE-2024-40937
+  patch: []
+- cve: CVE-2024-40938
+  patch:
+  - 88da52ccd66e65f2e63a6c35c9dff55d448ef4dc
+- cve: CVE-2024-40939
+  patch:
+  - b0c9a26435413b81799047a7be53255640432547
+- cve: CVE-2024-40940
+  patch:
+  - 229bedbf62b13af5aba6525ad10b62ad38d9ccb5
+- cve: CVE-2024-40941
+  patch:
+  - 4bb95f4535489ed830cf9b34b0a891e384d1aee4
+- cve: CVE-2024-40942
+  patch: []
+- cve: CVE-2024-40943
+  patch:
+  - 952b023f06a24b2ad6ba67304c4c84d45bea2f18
+- cve: CVE-2024-40944
+  patch:
+  - 93c1800b3799f17375989b0daf76497dd3e80922
+- cve: CVE-2024-40945
+  patch:
+  - 89e8a2366e3bce584b6c01549d5019c5cda1205e
+- cve: CVE-2024-40947
+  patch:
+  - 9a95c5bfbf02a0a7f5983280fe284a0ff0836c34
+- cve: CVE-2024-40948
+  patch:
+  - 8bb592c2eca8fd2bc06db7d80b38da18da4a2f43
+- cve: CVE-2024-40949
+  patch:
+  - 9094b4a1c76cfe84b906cc152bab34d4ba26fa5c
+- cve: CVE-2024-40950
+  patch:
+  - 6a50c9b512f7734bc356f4bd47885a6f7c98491a
+- cve: CVE-2024-40951
+  patch:
+  - 685d03c3795378fca6a1b3d43581f7f1a3fc095f
+- cve: CVE-2024-40952
+  patch:
+  - 58f7e1e2c9e72c7974054c64c3abeac81c11f822
+- cve: CVE-2024-40953
+  patch:
+  - 49f683b41f28918df3e51ddc0d928cb2e934ccdb
+- cve: CVE-2024-40954
+  patch:
+  - 6cd4a78d962bebbaf8beb7d2ead3f34120e3f7b2
+- cve: CVE-2024-40955
+  patch:
+  - 13df4d44a3aaabe61cd01d277b6ee23ead2a5206
+- cve: CVE-2024-40956
+  patch:
+  - e3215deca4520773cd2b155bed164c12365149a7
+- cve: CVE-2024-40957
+  patch:
+  - 9a3bc8d16e0aacd65c31aaf23a2bced3288a7779
+- cve: CVE-2024-40958
+  patch:
+  - ff960f9d3edbe08a736b5a224d91a305ccc946b0
+- cve: CVE-2024-40959
+  patch:
+  - d46401052c2d5614da8efea5788532f0401cb164
+- cve: CVE-2024-40960
+  patch:
+  - b86762dbe19a62e785c189f313cda5b989931f37
+- cve: CVE-2024-40961
+  patch:
+  - 2eab4543a2204092c3a7af81d7d6c506e59a03a6
+- cve: CVE-2024-40962
+  patch:
+  - cebae292e0c32a228e8f2219c270a7237be24a6a
+- cve: CVE-2024-40963
+  patch:
+  - ce5cdd3b05216b704a704f466fb4c2dff3778caf
+- cve: CVE-2024-40964
+  patch:
+  - 6386682cdc8b41319c92fbbe421953e33a28840c
+- cve: CVE-2024-40965
+  patch: []
+- cve: CVE-2024-40966
+  patch:
+  - 6bd23e0c2bb6c65d4f5754d1456bc9a4427fc59b
+- cve: CVE-2024-40967
+  patch:
+  - e533e4c62e9993e62e947ae9bbec34e4c7ae81c2
+- cve: CVE-2024-40968
+  patch:
+  - 29b83a64df3b42c88c0338696feb6fdcd7f1f3b7
+- cve: CVE-2024-40969
+  patch:
+  - 3bdb7f161697e2d5123b89fe1778ef17a44858e7
+- cve: CVE-2024-40970
+  patch:
+  - 333e11bf47fa8d477db90e2900b1ed3c9ae9b697
+- cve: CVE-2024-40971
+  patch:
+  - ac5eecf481c29942eb9a862e758c0c8b68090c33
+- cve: CVE-2024-40972
+  patch:
+  - 0a46ef234756dca04623b7591e8ebb3440622f0b
+- cve: CVE-2024-40973
+  patch:
+  - 53dbe08504442dc7ba4865c09b3bbf5fe849681b
+- cve: CVE-2024-40974
+  patch:
+  - ff2e185cf73df480ec69675936c4ee75a445c3e4
+- cve: CVE-2024-40975
+  patch: []
+- cve: CVE-2024-40976
+  patch:
+  - a421cc7a6a001b70415aa4f66024fa6178885a14
+- cve: CVE-2024-40977
+  patch:
+  - ecf0b2b8a37c8464186620bef37812a117ff6366
+- cve: CVE-2024-40978
+  patch:
+  - 28027ec8e32ecbadcd67623edb290dad61e735b5
+- cve: CVE-2024-40979
+  patch:
+  - 303c017821d88ebad887814114d4e5966d320b28
+- cve: CVE-2024-40980
+  patch:
+  - f1e197a665c2148ebc25fe09c53689e60afea195
+- cve: CVE-2024-40981
+  patch:
+  - 40dc8ab605894acae1473e434944924a22cfaaa0
+- cve: CVE-2024-40982
+  patch:
+  - 789c17185fb0f39560496c2beab9b57ce1d0cbe7
+- cve: CVE-2024-40983
+  patch:
+  - 2ebe8f840c7450ecbfca9d18ac92e9ce9155e269
+- cve: CVE-2024-40984
+  patch:
+  - a83e1385b780d41307433ddbc86e3c528db031f0
+- cve: CVE-2024-40985
+  patch:
+  - f9ae848904289ddb16c7c9e4553ed4c64300de49
+- cve: CVE-2024-40986
+  patch:
+  - 462237d2d93fc9e9221d1cf9f773954d27da83c0
+- cve: CVE-2024-40987
+  patch:
+  - f0d576f840153392d04b2d52cf3adab8f62e8cb6
+- cve: CVE-2024-40988
+  patch:
+  - a498df5421fd737d11bfd152428ba6b1c8538321
+- cve: CVE-2024-40989
+  patch: []
+- cve: CVE-2024-40990
+  patch:
+  - 36ab7ada64caf08f10ee5a114d39964d1f91e81d
+- cve: CVE-2024-40991
+  patch:
+  - ba27e9d2207784da748b19170a2e56bd7770bd81
+- cve: CVE-2024-40992
+  patch:
+  - f67ac0061c7614c1548963d3ef1ee1606efd8636
+- cve: CVE-2024-40993
+  patch:
+  - 8ecd06277a7664f4ef018abae3abd3451d64e7a6
+- cve: CVE-2024-40994
+  patch:
+  - 81d23d2a24012e448f651e007fac2cfd20a45ce0
+- cve: CVE-2024-40995
+  patch:
+  - d864319871b05fadd153e0aede4811ca7008f5d6
+- cve: CVE-2024-40996
+  patch:
+  - 2bbe3e5a2f4ef69d13be54f1cf895b4658287080
+- cve: CVE-2024-40997
+  patch:
+  - cea04f3d9aeebda9d9c063c0dfa71e739c322c81
+- cve: CVE-2024-40998
+  patch:
+  - b4b4fda34e535756f9e774fb2d09c4537b7dfd1c
+- cve: CVE-2024-40999
+  patch:
+  - b37b98a3a0c1198bafe8c2d9ce0bc845b4e7a9a7
+- cve: CVE-2024-41000
+  patch:
+  - ccb326b5f9e623eb7f130fbbf2505ec0e2dcaff9
+- cve: CVE-2024-41001
+  patch:
+  - c4ce0ab27646f4206a9eb502d6fe45cb080e1cae
+- cve: CVE-2024-41002
+  patch:
+  - bba4250757b4ae1680fea435a358d8093f254094
+- cve: CVE-2024-41003
+  patch:
+  - 92424801261d1564a0bb759da3cf3ccd69fdf5a2
+- cve: CVE-2024-41004
+  patch:
+  - 3572bd5689b0812b161b40279e39ca5b66d73e88
+- cve: CVE-2024-41005
+  patch:
+  - c2e6a872bde9912f1a7579639c5ca3adf1003916
+- cve: CVE-2024-41006
+  patch: []
+- cve: CVE-2024-41007
+  patch:
+  - 97a9063518f198ec0adb2ecb89789de342bb8283
+- cve: CVE-2024-41008
+  patch:
+  - b8f67b9ddf4f8fe6dd536590712b5912ad78f99c
+- cve: CVE-2024-41009
+  patch:
+  - cfa1a2329a691ffd991fcf7248a57d752e712881
+- cve: CVE-2024-41010
+  patch:
+  - 1cb6f0bae50441f4b4b32a28315853b279c7404e
+- cve: CVE-2024-41011
+  patch:
+  - be4a2a81b6b90d1a47eaeaace4cc8e2cb57b96c7
+- cve: CVE-2024-41012
+  patch:
+  - 3cad1bc010416c6dd780643476bc59ed742436b9
+- cve: CVE-2024-41013
+  patch:
+  - 0c7fcdb6d06cdf8b19b57c17605215b06afa864a
+- cve: CVE-2024-41014
+  patch:
+  - fb63435b7c7dc112b1ae1baea5486e0a6e27b196
+- cve: CVE-2024-41015
+  patch:
+  - 255547c6bb8940a97eea94ef9d464ea5967763fb
+- cve: CVE-2024-41016
+  patch:
+  - af77c4fc1871847b528d58b7fdafb4aa1f6a9262
+- cve: CVE-2024-41017
+  patch:
+  - d0fa70aca54c8643248e89061da23752506ec0d4
+- cve: CVE-2024-41018
+  patch: []
+- cve: CVE-2024-41019
+  patch:
+  - 50c47879650b4c97836a0086632b3a2e300b0f06
+- cve: CVE-2024-41020
+  patch:
+  - f8138f2ad2f745b9a1c696a05b749eabe44337ea
+- cve: CVE-2024-41021
+  patch:
+  - df39038cd89525d465c2c8827eb64116873f141a
+- cve: CVE-2024-41022
+  patch:
+  - 6769a23697f17f9bf9365ca8ed62fe37e361a05a
+- cve: CVE-2024-41023
+  patch:
+  - b58652db66c910c2245f5bee7deca41c12d707b9
+- cve: CVE-2024-41024
+  patch: []
+- cve: CVE-2024-41025
+  patch:
+  - ad0bd973a033003ca578c42a760d1dc77aeea15e
+- cve: CVE-2024-41026
+  patch:
+  - 16198eef11c1929374381d7f6271b4bf6aa44615
+- cve: CVE-2024-41027
+  patch:
+  - 1723f04caacb32cadc4e063725d836a0c4450694
+- cve: CVE-2024-41028
+  patch:
+  - b6e02c6b0377d4339986e07aeb696c632cd392aa
+- cve: CVE-2024-41029
+  patch:
+  - 6bef98bafd82903a8d461463f9594f19f1fd6a85
+- cve: CVE-2024-41030
+  patch:
+  - e2e33caa5dc2eae7bddf88b22ce11ec3d760e5cd
+- cve: CVE-2024-41031
+  patch:
+  - 3390916aca7af1893ed2ebcdfee1d6fdb65bb058
+- cve: CVE-2024-41032
+  patch:
+  - a34acf30b19bc4ee3ba2f1082756ea2604c19138
+- cve: CVE-2024-41033
+  patch:
+  - 5a4d8944d6b1e1aaaa83ea42c116b520b4ed0394
+- cve: CVE-2024-41034
+  patch:
+  - a9e1ddc09ca55746079cc479aa3eb6411f0d99d4
+- cve: CVE-2024-41035
+  patch:
+  - a368ecde8a5055b627749b09c6218ef793043e47
+- cve: CVE-2024-41036
+  patch:
+  - 0913ec336a6c0c4a2b296bd9f74f8e41c4c83c8c
+- cve: CVE-2024-41037
+  patch:
+  - 9065693dcc13f287b9e4991f43aee70cf5538fdd
+- cve: CVE-2024-41038
+  patch:
+  - 2163aff6bebbb752edf73f79700f5e2095f3559e
+- cve: CVE-2024-41039
+  patch:
+  - 3019b86bce16fbb5bc1964f3544d0ce7d0137278
+- cve: CVE-2024-41040
+  patch:
+  - 26488172b0292bed837b95a006a3f3431d1898c3
+- cve: CVE-2024-41041
+  patch:
+  - 5c0b485a8c6116516f33925b9ce5b6104a6eadfd
+- cve: CVE-2024-41042
+  patch:
+  - cff3bd012a9512ac5ed858d38e6ed65f6391008c
+- cve: CVE-2024-41043
+  patch:
+  - 631a4b3ddc7831b20442c59c28b0476d0704c9af
+- cve: CVE-2024-41044
+  patch:
+  - f2aeb7306a898e1cbd03963d376f4b6656ca2b55
+- cve: CVE-2024-41045
+  patch:
+  - a6fcd19d7eac1335eb76bc16b6a66b7f574d1d69
+- cve: CVE-2024-41046
+  patch:
+  - e1533b6319ab9c3a97dad314dd88b3783bc41b69
+- cve: CVE-2024-41047
+  patch:
+  - 01fc5142ae6b06b61ed51a624f2732d6525d8ea3
+- cve: CVE-2024-41048
+  patch:
+  - f0c18025693707ec344a70b6887f7450bf4c826b
+- cve: CVE-2024-41049
+  patch:
+  - 1b3ec4f7c03d4b07bad70697d7e2f4088d2cfe92
+- cve: CVE-2024-41050
+  patch:
+  - 19f4f399091478c95947f6bd7ad61622300c30d9
+- cve: CVE-2024-41051
+  patch:
+  - 12e009d60852f7bce0afc373ca0b320f14150418
+- cve: CVE-2024-41052
+  patch:
+  - 5a88a3f67e37e39f933b38ebb4985ba5822e9eca
+- cve: CVE-2024-41053
+  patch:
+  - 74736103fb4123c71bf11fb7a6abe7c884c5269e
+- cve: CVE-2024-41054
+  patch:
+  - 9307a998cb9846a2557fdca286997430bee36a2a
+- cve: CVE-2024-41055
+  patch:
+  - 82f0b6f041fad768c28b4ad05a683065412c226e
+- cve: CVE-2024-41056
+  patch:
+  - 680e126ec0400f6daecf0510c5bb97a55779ff03
+- cve: CVE-2024-41057
+  patch:
+  - 5d8f805789072ea7fd39504694b7bd17e5f751c4
+- cve: CVE-2024-41058
+  patch:
+  - 522018a0de6b6fcce60c04f86dfc5f0e4b6a1b36
+- cve: CVE-2024-41059
+  patch:
+  - 0570730c16307a72f8241df12363f76600baf57d
+- cve: CVE-2024-41060
+  patch:
+  - 6fb15dcbcf4f212930350eaee174bb60ed40a536
+- cve: CVE-2024-41061
+  patch:
+  - 0ad4b4a2f6357c45fbe444ead1a929a0b4017d03
+- cve: CVE-2024-41062
+  patch:
+  - 89e856e124f9ae548572c56b1b70c2255705f8fe
+- cve: CVE-2024-41063
+  patch:
+  - 0d151a103775dd9645c78c97f77d6e2a5298d913
+- cve: CVE-2024-41064
+  patch:
+  - a1216e62d039bf63a539bbe718536ec789a853dd
+- cve: CVE-2024-41065
+  patch:
+  - 1a14150e1656f7a332a943154fc486504db4d586
+- cve: CVE-2024-41066
+  patch:
+  - 0983d288caf984de0202c66641577b739caad561
+- cve: CVE-2024-41067
+  patch:
+  - 2c49908634a2b97b1c3abe0589be2739ac5e7fd5
+- cve: CVE-2024-41068
+  patch:
+  - 6434b33faaa063df500af355ee6c3942e0f8d982
+- cve: CVE-2024-41069
+  patch:
+  - 97ab304ecd95c0b1703ff8c8c3956dc6e2afe8e1
+- cve: CVE-2024-41070
+  patch:
+  - a986fa57fd81a1430e00b3c6cf8a325d6f894a63
+- cve: CVE-2024-41071
+  patch:
+  - 2663d0462eb32ae7c9b035300ab6b1523886c718
+- cve: CVE-2024-41072
+  patch:
+  - 6ef09cdc5ba0f93826c09d810c141a8d103a80fc
+- cve: CVE-2024-41073
+  patch:
+  - e5d574ab37f5f2e7937405613d9b1a724811e5ad
+- cve: CVE-2024-41074
+  patch:
+  - 4f8703fb3482f92edcfd31661857b16fec89c2c0
+- cve: CVE-2024-41075
+  patch:
+  - a26dc49df37e996876f50a0210039b2d211fdd6f
+- cve: CVE-2024-41076
+  patch:
+  - aad11473f8f4be3df86461081ce35ec5b145ba68
+- cve: CVE-2024-41077
+  patch:
+  - c462ecd659b5fce731f1d592285832fd6ad54053
+- cve: CVE-2024-41078
+  patch:
+  - a7e4c6a3031c74078dba7fa36239d0f4fe476c53
+- cve: CVE-2024-41079
+  patch:
+  - cd0c1b8e045a8d2785342b385cb2684d9b48e426
+- cve: CVE-2024-41080
+  patch:
+  - 73254a297c2dd094abec7c9efee32455ae875bdf
+- cve: CVE-2024-41081
+  patch: []
+- cve: CVE-2024-41082
+  patch:
+  - 7dc3bfcb4c9cc58970fff6aaa48172cb224d85aa
+- cve: CVE-2024-41083
+  patch:
+  - a81c98bfa40c11f8ea79b5a9b3f5fda73bfbb4d2
+- cve: CVE-2024-41084
+  patch:
+  - 285f2a08841432fc3e498b1cd00cce5216cdf189
+- cve: CVE-2024-41085
+  patch:
+  - 84ec985944ef34a34a1605b93ce401aa8737af96
+- cve: CVE-2024-41086
+  patch:
+  - 692aa7a54b2b28d59f24b3bf8250837805484b99
+- cve: CVE-2024-41087
+  patch: []
+- cve: CVE-2024-41088
+  patch:
+  - d8fb63e46c884c898a38f061c2330f7729e75510
+- cve: CVE-2024-41089
+  patch:
+  - 6d411c8ccc0137a612e0044489030a194ff5c843
+- cve: CVE-2024-41090
+  patch:
+  - ed7f2afdd0e043a397677e597ced0830b83ba0b3
+- cve: CVE-2024-41091
+  patch:
+  - 049584807f1d797fc3078b68035450a9769eb5c3
+- cve: CVE-2024-41092
+  patch:
+  - 996c3412a06578e9d779a16b9e79ace18125ab50
+- cve: CVE-2024-41093
+  patch:
+  - bcfa48ff785bd121316592b131ff6531e3e696bb
+- cve: CVE-2024-41094
+  patch:
+  - d92a7580392ad4681b1d4f9275d00b95375ebe01
+- cve: CVE-2024-41095
+  patch:
+  - 66edf3fb331b6c55439b10f9862987b0916b3726
+- cve: CVE-2024-41096
+  patch:
+  - 9eee5330656bf92f51cb1f09b2dc9f8cf975b3d1
+- cve: CVE-2024-41097
+  patch:
+  - 2eabb655a968b862bc0c31629a09f0fbf3c80d51
+- cve: CVE-2024-41098
+  patch:
+  - 5d92c7c566dc76d96e0e19e481d926bbe6631c1e
+- cve: CVE-2024-42063
+  patch:
+  - e8742081db7d01f980c6161ae1e8a1dbc1e30979
+- cve: CVE-2024-42064
+  patch:
+  - af114efe8d24b5711cfbedf7180f2ac1a296c24b
+- cve: CVE-2024-42065
+  patch:
+  - a6eff8f9c7e844cb24ccb188ca24abcd59734e74
+- cve: CVE-2024-42066
+  patch: []
+- cve: CVE-2024-42067
+  patch:
+  - e60adf513275c3a38e5cb67f7fd12387e43a3ff5
+- cve: CVE-2024-42068
+  patch:
+  - 7d2cc63eca0c993c99d18893214abf8f85d566d8
+- cve: CVE-2024-42069
+  patch:
+  - 1864b8224195d0e43ddb92a8151f54f6562090cc
+- cve: CVE-2024-42070
+  patch:
+  - 7931d32955e09d0a11b1fe0b6aac1bfa061c005c
+- cve: CVE-2024-42071
+  patch:
+  - 84b767f9e34fdb143c09e66a2a20722fc2921821
+- cve: CVE-2024-42072
+  patch:
+  - 2b2efe1937ca9f8815884bd4dcd5b32733025103
+- cve: CVE-2024-42073
+  patch: []
+- cve: CVE-2024-42074
+  patch:
+  - 98d919dfee1cc402ca29d45da642852d7c9a2301
+- cve: CVE-2024-42075
+  patch:
+  - b90d77e5fd784ada62ddd714d15ee2400c28e1cf
+- cve: CVE-2024-42076
+  patch:
+  - b7cdf1dd5d2a2d8200efd98d1893684db48fe134
+- cve: CVE-2024-42077
+  patch:
+  - be346c1a6eeb49d8fda827d2a9522124c2f72f36
+- cve: CVE-2024-42078
+  patch:
+  - e0011bca603c101f2a3c007bdb77f7006fa78fb1
+- cve: CVE-2024-42079
+  patch:
+  - 35264909e9d1973ab9aaa2a1b07cda70f12bb828
+- cve: CVE-2024-42080
+  patch:
+  - ca537a34775c103f7b14d7bbd976403f1d1525d8
+- cve: CVE-2024-42081
+  patch:
+  - b15e65349553b1689d15fbdebea874ca5ae2274a
+- cve: CVE-2024-42082
+  patch:
+  - 7e9f79428372c6eab92271390851be34ab26bfb4
+- cve: CVE-2024-42083
+  patch:
+  - e3f02f32a05009a688a87f5799e049ed6b55bab5
+- cve: CVE-2024-42084
+  patch:
+  - 4b8e88e563b5f666446d002ad0dc1e6e8e7102b0
+- cve: CVE-2024-42085
+  patch:
+  - 7838de15bb700c2898a7d741db9b1f3cbc86c136
+- cve: CVE-2024-42086
+  patch:
+  - fdd478c3ae98c3f13628e110dce9b6cfb0d9b3c8
+- cve: CVE-2024-42087
+  patch:
+  - ee7860cd8b5763017f8dc785c2851fecb7a0c565
+- cve: CVE-2024-42088
+  patch:
+  - 282a4482e198e03781c152c88aac8aa382ef9a55
+- cve: CVE-2024-42089
+  patch:
+  - 90f3feb24172185f1832636264943e8b5e289245
+- cve: CVE-2024-42090
+  patch:
+  - adec57ff8e66aee632f3dd1f93787c13d112b7a1
+- cve: CVE-2024-42091
+  patch:
+  - a918e771e6fbe1fa68932af5b0cdf473e23090cc
+- cve: CVE-2024-42092
+  patch:
+  - 7aa9b96e9a73e4ec1771492d0527bd5fc5ef9164
+- cve: CVE-2024-42093
+  patch: []
+- cve: CVE-2024-42094
+  patch:
+  - be4e1304419c99a164b4c0e101c7c2a756b635b9
+- cve: CVE-2024-42095
+  patch:
+  - 9d141c1e615795eeb93cd35501ad144ee997a826
+- cve: CVE-2024-42096
+  patch:
+  - 093d9603b60093a9aaae942db56107f6432a5dca
+- cve: CVE-2024-42097
+  patch:
+  - 89b32ccb12ae67e630c6453d778ec30a592a212f
+- cve: CVE-2024-42098
+  patch:
+  - 73e5984e540a76a2ee1868b91590c922da8c24c9
+- cve: CVE-2024-42099
+  patch:
+  - b3a58f3b90f564f42a5c35778d8c5107b2c2150b
+- cve: CVE-2024-42100
+  patch:
+  - ea977d742507e534d9fe4f4d74256f6b7f589338
+- cve: CVE-2024-42101
+  patch:
+  - 80bec6825b19d95ccdfd3393cf8ec15ff2a749b4
+- cve: CVE-2024-42102
+  patch:
+  - 30139c702048f1097342a31302cbd3d478f50c63
+- cve: CVE-2024-42103
+  patch:
+  - 48f091fd50b2eb33ae5eaea9ed3c4f81603acf38
+- cve: CVE-2024-42104
+  patch:
+  - bb76c6c274683c8570ad788f79d4b875bde0e458
+- cve: CVE-2024-42105
+  patch:
+  - e2fec219a36e0993642844be0f345513507031f4
+- cve: CVE-2024-42106
+  patch:
+  - 61cf1c739f08190a4cbf047b9fbb192a94d87e3f
+- cve: CVE-2024-42107
+  patch:
+  - 996422e3230e41468f652d754fefd1bdbcd4604e
+- cve: CVE-2024-42108
+  patch:
+  - 9a0c28efeec6383ef22e97437616b920e7320b67
+- cve: CVE-2024-42109
+  patch: []
+- cve: CVE-2024-42110
+  patch:
+  - e15a5d821e5192a3769d846079bc9aa380139baf
+- cve: CVE-2024-42111
+  patch:
+  - 724d8042cef84496ddb4492dc120291f997ae26b
+- cve: CVE-2024-42112
+  patch:
+  - 935124dd5883b5de68dc5a94f582480a10643dc9
+- cve: CVE-2024-42113
+  patch:
+  - 7c36711a2cd8059c2d24f5e5c1d76e8ea2d5613c
+- cve: CVE-2024-42114
+  patch:
+  - d1cba2ea8121e7fdbe1328cea782876b1dd80993
+- cve: CVE-2024-42115
+  patch:
+  - af9a8730ddb6a4b2edd779ccc0aceb994d616830
+- cve: CVE-2024-42116
+  patch:
+  - 86167183a17e03ec77198897975e9fdfbd53cb0b
+- cve: CVE-2024-42117
+  patch:
+  - 01eb50e53c1ce505bf449348d433181310288765
+- cve: CVE-2024-42118
+  patch:
+  - 3ac31c9a707dd1c7c890b95333182f955e9dcb57
+- cve: CVE-2024-42119
+  patch:
+  - 1357b2165d9ad94faa4c4a20d5e2ce29c2ff29c3
+- cve: CVE-2024-42120
+  patch:
+  - 5396a70e8cf462ec5ccf2dc8de103c79de9489e6
+- cve: CVE-2024-42121
+  patch:
+  - 59d99deb330af206a4541db0c4da8f73880fba03
+- cve: CVE-2024-42122
+  patch:
+  - 8e65a1b7118acf6af96449e1e66b7adbc9396912
+- cve: CVE-2024-42123
+  patch:
+  - 506c245f3f1cd989cb89811a7f06e04ff8813a0d
+- cve: CVE-2024-42124
+  patch:
+  - 0d8b637c9c5eeaa1a4e3dfb336f3ff918eb64fec
+- cve: CVE-2024-42125
+  patch:
+  - bb38626f3f97e16e6d368a9ff6daf320f3fe31d9
+- cve: CVE-2024-42126
+  patch:
+  - 0db880fc865ffb522141ced4bfa66c12ab1fbb70
+- cve: CVE-2024-42127
+  patch:
+  - a6683c690bbfd1f371510cb051e8fa49507f3f5e
+- cve: CVE-2024-42128
+  patch:
+  - c382e2e3eccb6b7ca8c7aff5092c1668428e7de6
+- cve: CVE-2024-42129
+  patch:
+  - efc347b9efee1c2b081f5281d33be4559fa50a16
+- cve: CVE-2024-42130
+  patch:
+  - 068648aab72c9ba7b0597354ef4d81ffaac7b979
+- cve: CVE-2024-42131
+  patch:
+  - 385d838df280eba6c8680f9777bfa0d0bfe7e8b2
+- cve: CVE-2024-42132
+  patch:
+  - 1cc18c2ab2e8c54c355ea7c0423a636e415a0c23
+- cve: CVE-2024-42133
+  patch:
+  - 015d79c96d62cd8a4a359fcf5be40d58088c936b
+- cve: CVE-2024-42134
+  patch:
+  - c8fae27d141a32a1624d0d0d5419d94252824498
+- cve: CVE-2024-42135
+  patch:
+  - db5247d9bf5c6ade9fd70b4e4897441e0269b233
+- cve: CVE-2024-42136
+  patch:
+  - efb905aeb44b0e99c0e6b07865b1885ae0471ebf
+- cve: CVE-2024-42137
+  patch:
+  - 88e72239ead9814b886db54fc4ee39ef3c2b8f26
+- cve: CVE-2024-42138
+  patch:
+  - 8ce34dccbe8fa7d2ef86f2d8e7db2a9b67cabfc3
+- cve: CVE-2024-42139
+  patch:
+  - 00d3b4f54582d4e4a02cda5886bb336eeab268cc
+- cve: CVE-2024-42140
+  patch:
+  - c562ba719df570c986caf0941fea2449150bcbc4
+- cve: CVE-2024-42141
+  patch:
+  - 596b6f081336e77764ca35cfeab66d0fcdbe544e
+- cve: CVE-2024-42142
+  patch:
+  - b20c2fb45470d0c7a603613c9cfa5d45720e17f2
+- cve: CVE-2024-42144
+  patch:
+  - a1191a77351e25ddf091bb1a231cae12ee598b5d
+- cve: CVE-2024-42145
+  patch:
+  - ca0b44e20a6f3032224599f02e7c8fb49525c894
+- cve: CVE-2024-42146
+  patch:
+  - f9116f658a6217b101e3b4e89f845775b6fb05d9
+- cve: CVE-2024-42147
+  patch:
+  - 8be0913389718e8d27c4f1d4537b5e1b99ed7739
+- cve: CVE-2024-42148
+  patch:
+  - 134061163ee5ca4759de5c24ca3bd71608891ba7
+- cve: CVE-2024-42149
+  patch:
+  - 2ae4db5647d807efb6a87c09efaa6d1db9c905d7
+- cve: CVE-2024-42150
+  patch:
+  - bd07a98178462e7a02ed2bf7dec90a00944c1da5
+- cve: CVE-2024-42151
+  patch:
+  - 1479eaff1f16983d8fda7c5a08a586c21891087d
+- cve: CVE-2024-42152
+  patch:
+  - c758b77d4a0a0ed3a1292b3fd7a2aeccd1a169a4
+- cve: CVE-2024-42153
+  patch:
+  - f63b94be6942ba82c55343e196bd09b53227618e
+- cve: CVE-2024-42154
+  patch: []
+- cve: CVE-2024-42155
+  patch: []
+- cve: CVE-2024-42156
+  patch:
+  - d65d76a44ffe74c73298ada25b0f578680576073
+- cve: CVE-2024-42157
+  patch: []
+- cve: CVE-2024-42158
+  patch:
+  - 22e6824622e8a8889df0f8fc4ed5aea0e702a694
+- cve: CVE-2024-42159
+  patch:
+  - 3668651def2c1622904e58b0280ee93121f2b10b
+- cve: CVE-2024-42160
+  patch:
+  - 4ed886b187f47447ad559619c48c086f432d2b77
+- cve: CVE-2024-42161
+  patch:
+  - 009367099eb61a4fc2af44d4eb06b6b4de7de6db
+- cve: CVE-2024-42162
+  patch: []
+- cve: CVE-2024-42223
+  patch:
+  - 1aa1329a67cc214c3b7bd2a14d1301a795760b07
+- cve: CVE-2024-42224
+  patch:
+  - 4c7f3950a9fd53a62b156c0fe7c3a2c43b0ba19b
+- cve: CVE-2024-42225
+  patch:
+  - 7f819a2f4fbc510e088b49c79addcf1734503578
+- cve: CVE-2024-42227
+  patch:
+  - f1fd8a0a54e6d23a6d16ee29159f247862460fd1
+- cve: CVE-2024-42228
+  patch:
+  - 88a9a467c548d0b3c7761b4fd54a68e70f9c0944
+- cve: CVE-2024-42229
+  patch:
+  - 23e4099bdc3c8381992f9eb975c79196d6755210
+- cve: CVE-2024-42230
+  patch:
+  - 21a741eb75f80397e5f7d3739e24d7d75e619011
+- cve: CVE-2024-42231
+  patch:
+  - 64d2c847ba380e07b9072d65a50aa6469d2aa43f
+- cve: CVE-2024-42232
+  patch: []
+- cve: CVE-2024-42233
+  patch: []
+- cve: CVE-2024-42234
+  patch:
+  - be9581ea8c058d81154251cb0695987098996cad
+- cve: CVE-2024-42235
+  patch:
+  - b5efb63acf7bddaf20eacfcac654c25c446eabe8
+- cve: CVE-2024-42236
+  patch:
+  - 6d3c721e686ea6c59e18289b400cc95c76e927e0
+- cve: CVE-2024-42237
+  patch:
+  - 6598afa9320b6ab13041616950ca5f8f938c0cf1
+- cve: CVE-2024-42238
+  patch:
+  - 959fe01e85b7241e3ec305d657febbe82da16a02
+- cve: CVE-2024-42239
+  patch:
+  - d4523831f07a267a943f0dde844bf8ead7495f13
+- cve: CVE-2024-42240
+  patch:
+  - ac8b270b61d48fcc61f052097777e3b5e11591e0
+- cve: CVE-2024-42241
+  patch:
+  - 9fd154ba926b34c833b7bfc4c14ee2e931b3d743
+- cve: CVE-2024-42242
+  patch:
+  - 63d20a94f24fc1cbaf44d0e7c0e0a8077fde0aef
+- cve: CVE-2024-42243
+  patch:
+  - 099d90642a711caae377f53309abfe27e8724a8b
+- cve: CVE-2024-42244
+  patch:
+  - c15a688e49987385baa8804bf65d570e362f8576
+- cve: CVE-2024-42245
+  patch:
+  - 2feab2492deb2f14f9675dd6388e9e2bf669c27a
+- cve: CVE-2024-42246
+  patch:
+  - 626dfed5fa3bfb41e0dffd796032b555b69f9cde
+- cve: CVE-2024-42247
+  patch:
+  - 948f991c62a4018fb81d85804eeab3029c6209f8
+- cve: CVE-2024-42248
+  patch:
+  - acd09ac253b5de8fd79fc61a482ee19154914c7a
+- cve: CVE-2024-42249
+  patch: []
+- cve: CVE-2024-42250
+  patch:
+  - cf5bb09e742a9cf6349127e868329a8f69b7a014
+- cve: CVE-2024-42251
+  patch:
+  - fa2690af573dfefb47ba6eef888797a64b6b5f3c
+- cve: CVE-2024-42252
+  patch:
+  - 339b84ab6b1d66900c27bd999271cb2ae40ce812
+- cve: CVE-2024-42253
+  patch:
+  - bfc6444b57dc7186b6acc964705d7516cbaf3904
+- cve: CVE-2024-42254
+  patch:
+  - bcc87d978b834c298bbdd9c52454c5d0a946e97e
+- cve: CVE-2024-42255
+  patch:
+  - 7dc357d343f134bf59815ff6098b93503ec8a23b
+- cve: CVE-2024-42256
+  patch:
+  - de40579b903883274fe203865f29d66b168b7236
+- cve: CVE-2024-42257
+  patch: []
+- cve: CVE-2024-42258
+  patch:
+  - d9592025000b3cf26c742f3505da7b83aedc26d5
+- cve: CVE-2024-42259
+  patch:
+  - 8bdd9ef7e9b1b2a73e394712b72b22055e0e26c3
+- cve: CVE-2024-42260
+  patch:
+  - 4ecc24a84d7e0254efd150ec23e0b89638386516
+- cve: CVE-2024-42261
+  patch:
+  - 023d22e8bb0cdd6900382ad1ed06df3b6c2ea791
+- cve: CVE-2024-42262
+  patch:
+  - 32df4abc44f24dbec239d43e2b26d5768c5d1a78
+- cve: CVE-2024-42263
+  patch:
+  - 0e50fcc20bd87584840266e8004f9064a8985b4f
+- cve: CVE-2024-42264
+  patch:
+  - 6ce9efd12ae81cf46bf44eb0348594558dfbb9d2
+- cve: CVE-2024-42265
+  patch: []
+- cve: CVE-2024-42266
+  patch:
+  - 478574370bef7951fbd9ef5155537d6cbed49472
+- cve: CVE-2024-42267
+  patch:
+  - 0c710050c47d45eb77b28c271cddefc5c785cb40
+- cve: CVE-2024-42268
+  patch:
+  - 572f9caa9e7295f8c8822e4122c7ae8f1c412ff9
+- cve: CVE-2024-42269
+  patch:
+  - c22921df777de5606f1047b1345b8d22ef1c0b34
+- cve: CVE-2024-42270
+  patch:
+  - 5830aa863981d43560748aa93589c0695191d95d
+- cve: CVE-2024-42271
+  patch:
+  - f558120cd709682b739207b48cf7479fd9568431
+- cve: CVE-2024-42272
+  patch:
+  - 2191a54f63225b548fd8346be3611c3219a24738
+- cve: CVE-2024-42273
+  patch:
+  - 8cb1f4080dd91c6e6b01dbea013a3f42341cb6a1
+- cve: CVE-2024-42274
+  patch:
+  - 3dab73ab925a51ab05543b491bf17463a48ca323
+- cve: CVE-2024-42275
+  patch:
+  - b5fbf924f125ba3638cfdc21c0515eb7e76264ca
+- cve: CVE-2024-42276
+  patch:
+  - c31fad1470389666ac7169fe43aa65bf5b7e2cfd
+- cve: CVE-2024-42277
+  patch:
+  - 630482ee0653decf9e2482ac6181897eb6cde5b8
+- cve: CVE-2024-42278
+  patch:
+  - 92c78222168e9035a9bfb8841c2e56ce23e51f73
+- cve: CVE-2024-42279
+  patch:
+  - 9cf71eb0faef4bff01df4264841b8465382d7927
+- cve: CVE-2024-42280
+  patch:
+  - 61ab751451f5ebd0b98e02276a44e23a10110402
+- cve: CVE-2024-42281
+  patch:
+  - fa5ef655615a01533035c6139248c5b33aa27028
+- cve: CVE-2024-42282
+  patch:
+  - 16f3a28cf5f876a7f3550d8f4c870a7b41bcfaef
+- cve: CVE-2024-42283
+  patch:
+  - 6d745cd0e9720282cd291d36b9db528aea18add2
+- cve: CVE-2024-42284
+  patch:
+  - fa96c6baef1b5385e2f0c0677b32b3839e716076
+- cve: CVE-2024-42285
+  patch:
+  - aee2424246f9f1dadc33faa78990c1e2eb7826e4
+- cve: CVE-2024-42286
+  patch:
+  - eb1d4ce2609584eeb7694866f34d4b213caa3af9
+- cve: CVE-2024-42287
+  patch:
+  - 4475afa2646d3fec176fc4d011d3879b26cb26e3
+- cve: CVE-2024-42288
+  patch:
+  - c03d740152f78e86945a75b2ad541bf972fab92a
+- cve: CVE-2024-42289
+  patch:
+  - 76f480d7c717368f29a3870f7d64471ce0ff8fb2
+- cve: CVE-2024-42290
+  patch:
+  - 33b1c47d1fc0b5f06a393bb915db85baacba18ea
+- cve: CVE-2024-42291
+  patch:
+  - 6ebbe97a488179f5dc85f2f1e0c89b486e99ee97
+- cve: CVE-2024-42292
+  patch:
+  - dd6e9894b451e7c85cceb8e9dc5432679a70e7dc
+- cve: CVE-2024-42293
+  patch:
+  - 36639013b3462c06ff8e3400a427f775b4fc97f5
+- cve: CVE-2024-42294
+  patch: []
+- cve: CVE-2024-42295
+  patch:
+  - 4811f7af6090e8f5a398fbdd766f903ef6c0d787
+- cve: CVE-2024-42296
+  patch:
+  - a8eb3de28e7a365690c61161e7a07a4fc7c60bbf
+- cve: CVE-2024-42297
+  patch:
+  - 192b8fb8d1c8ca3c87366ebbef599fa80bb626b8
+- cve: CVE-2024-42298
+  patch:
+  - e62599902327d27687693f6e5253a5d56583db58
+- cve: CVE-2024-42299
+  patch: []
+- cve: CVE-2024-42300
+  patch:
+  - 7dc5537c3f8be87e005f0844a7626c987914f8fd
+- cve: CVE-2024-42301
+  patch:
+  - ab11dac93d2d568d151b1918d7b84c2d02bacbd5
+- cve: CVE-2024-42302
+  patch:
+  - 11a1f4bc47362700fcbde717292158873fb847ed
+- cve: CVE-2024-42303
+  patch:
+  - 57e9ce68ae98551da9c161aaab12b41fe8601856
+- cve: CVE-2024-42304
+  patch:
+  - f9ca51596bbfd0f9c386dd1c613c394c78d9e5e6
+- cve: CVE-2024-42305
+  patch: []
+- cve: CVE-2024-42306
+  patch:
+  - a90d4471146de21745980cba51ce88e7926bcc4f
+- cve: CVE-2024-42307
+  patch:
+  - 193cc89ea0ca1da311877d2b4bb5e9f03bcc82a2
+- cve: CVE-2024-42308
+  patch:
+  - 4ab68e168ae1695f7c04fae98930740aaf7c50fa
+- cve: CVE-2024-42309
+  patch:
+  - 2df7aac81070987b0f052985856aa325a38debf6
+- cve: CVE-2024-42310
+  patch:
+  - cb520c3f366c77e8d69e4e2e2781a8ce48d98e79
+- cve: CVE-2024-42311
+  patch:
+  - 26a2ed107929a855155429b11e1293b83e6b2a8b
+- cve: CVE-2024-42312
+  patch:
+  - 98ca62ba9e2be5863c7d069f84f7166b45a5b2f4
+- cve: CVE-2024-42313
+  patch:
+  - a0157b5aa34eb43ec4c5510f9c260bbb03be937e
+- cve: CVE-2024-42314
+  patch:
+  - 8e7860543a94784d744c7ce34b78a2e11beefa5c
+- cve: CVE-2024-42315
+  patch:
+  - 89fc548767a2155231128cb98726d6d2ea1256c9
+- cve: CVE-2024-42316
+  patch:
+  - 8b671fe1a879923ecfb72dda6caf01460dd885ef
+- cve: CVE-2024-42317
+  patch:
+  - d659b715e94ac039803d7601505d3473393fc0be
+- cve: CVE-2024-42318
+  patch:
+  - 39705a6c29f8a2b93cf5b99528a55366c50014d1
+- cve: CVE-2024-42319
+  patch:
+  - a8bd68e4329f9a0ad1b878733e0f80be6a971649
+- cve: CVE-2024-42320
+  patch:
+  - 8e64d2356cbc800b4cd0e3e614797f76bcf0cdb8
+- cve: CVE-2024-42321
+  patch:
+  - 120f1c857a73e52132e473dee89b340440cb692b
+- cve: CVE-2024-42322
+  patch:
+  - cbd070a4ae62f119058973f6d2c984e325bce6e7
+- cve: CVE-2024-43815
+  patch:
+  - dd52b5eeb0f70893f762da7254e923fd23fd1379
+- cve: CVE-2024-43816
+  patch:
+  - 8bc7c617642db6d8d20ee671fb6c4513017e7a7e
+- cve: CVE-2024-43817
+  patch:
+  - e269d79c7d35aa3808b1f3c1737d63dab504ddc8
+- cve: CVE-2024-43818
+  patch:
+  - 5080808c3339de2220c602ab7c7fa23dc6c1a5a3
+- cve: CVE-2024-43819
+  patch: []
+- cve: CVE-2024-43820
+  patch:
+  - 3199a34bfaf7561410e0be1e33a61eba870768fc
+- cve: CVE-2024-43821
+  patch:
+  - 5e0bf3e8aec2cbc51123f84b29aaacbd91fc56fa
+- cve: CVE-2024-43822
+  patch:
+  - 3722873d49a1788d5420894d4f6f63e35f5c1f13
+- cve: CVE-2024-43823
+  patch:
+  - a231707a91f323af1e5d9f1722055ec2fc1c7775
+- cve: CVE-2024-43824
+  patch:
+  - 5a5095a8bd1bd349cce1c879e5e44407a34dda8a
+- cve: CVE-2024-43825
+  patch:
+  - 5acc3f971a01be48d5ff4252d8f9cdb87998cdfb
+- cve: CVE-2024-43826
+  patch:
+  - fada32ed6dbc748f447c8d050a961b75d946055a
+- cve: CVE-2024-43827
+  patch:
+  - c96140000915b610d86f941450e15ca552de154a
+- cve: CVE-2024-43828
+  patch:
+  - 907c3fe532253a6ef4eb9c4d67efb71fab58c706
+- cve: CVE-2024-43829
+  patch:
+  - 7bd09a2db0f617377027a2bb0b9179e6959edff3
+- cve: CVE-2024-43830
+  patch:
+  - c0dc9adf9474ecb7106e60e5472577375aedaed3
+- cve: CVE-2024-43831
+  patch:
+  - 59d438f8e02ca641c58d77e1feffa000ff809e9f
+- cve: CVE-2024-43832
+  patch:
+  - 3f29f6537f54d74e64bac0a390fb2e26da25800d
+- cve: CVE-2024-43833
+  patch:
+  - 9b4667ea67854f0b116fe22ad11ef5628c5b5b5f
+- cve: CVE-2024-43834
+  patch:
+  - 59a931c5b732ca5fc2ca727f5a72aeabaafa85ec
+- cve: CVE-2024-43835
+  patch:
+  - f8321fa75102246d7415a6af441872f6637c93ab
+- cve: CVE-2024-43836
+  patch:
+  - 4cddb0f15ea9c62f81b4889ea69a99368cc63a86
+- cve: CVE-2024-43837
+  patch:
+  - f7866c35873377313ff94398f17d425b28b71de1
+- cve: CVE-2024-43838
+  patch:
+  - 4a04b4f0de59dd5c621e78f15803ee0b0544eeb8
+- cve: CVE-2024-43839
+  patch:
+  - c9741a03dc8e491e57b95fba0058ab46b7e506da
+- cve: CVE-2024-43840
+  patch:
+  - 19d3c179a37730caf600a97fed3794feac2b197b
+- cve: CVE-2024-43841
+  patch:
+  - b5d14b0c6716fad7f0c94ac6e1d6f60a49f985c7
+- cve: CVE-2024-43842
+  patch:
+  - 85099c7ce4f9e64c66aa397cd9a37473637ab891
+- cve: CVE-2024-43843
+  patch:
+  - 9f1e16fb1fc9826001c69e0551d51fbbcd2d74e9
+- cve: CVE-2024-43844
+  patch:
+  - dda364c345913fe03ddbe4d5ae14a2754c100296
+- cve: CVE-2024-43845
+  patch:
+  - 27ab33854873e6fb958cb074681a0107cc2ecc4c
+- cve: CVE-2024-43846
+  patch:
+  - b4a3a89fffcdf09702b1f161b914e52abca1894d
+- cve: CVE-2024-43847
+  patch:
+  - 073f9f249eecd64ab9d59c91c4a23cfdcc02afe4
+- cve: CVE-2024-43848
+  patch:
+  - 2fe0a605d083b884490ee4de02be071b5b4291b1
+- cve: CVE-2024-43849
+  patch:
+  - 107924c14e3ddd85119ca43c26a4ee1056fa9b84
+- cve: CVE-2024-43850
+  patch: []
+- cve: CVE-2024-43851
+  patch:
+  - 4a95449dd975e2ea6629a034f3e74b46c9634916
+- cve: CVE-2024-43852
+  patch:
+  - 99bf7c2eccff82760fa23ce967cc67c8c219c6a6
+- cve: CVE-2024-43853
+  patch:
+  - 1be59c97c83ccd67a519d8a49486b3a8a73ca28a
+- cve: CVE-2024-43854
+  patch:
+  - 899ee2c3829c5ac14bfc7d3c4a5846c0b709b78f
+- cve: CVE-2024-43855
+  patch:
+  - 611d5cbc0b35a752e657a83eebadf40d814d006b
+- cve: CVE-2024-43856
+  patch:
+  - 28e8b7406d3a1f5329a03aa25a43aa28e087cb20
+- cve: CVE-2024-43857
+  patch:
+  - c82bc1ab2a8a5e73d9728e80c4c2ed87e8921a38
+- cve: CVE-2024-43858
+  patch:
+  - f73f969b2eb39ad8056f6c7f3a295fa2f85e313a
+- cve: CVE-2024-43859
+  patch:
+  - 298b1e4182d657c3e388adcc29477904e9600ed5
+- cve: CVE-2024-43860
+  patch:
+  - 2fa26ca8b786888673689ccc9da6094150939982
+- cve: CVE-2024-43861
+  patch:
+  - 7ab107544b777c3bd7feb9fe447367d8edd5b202
+- cve: CVE-2024-43862
+  patch:
+  - c4d6a347ba7babdf9d90a0eb24048c266cae0532
+- cve: CVE-2024-43863
+  patch:
+  - e58337100721f3cc0c7424a18730e4f39844934f
+- cve: CVE-2024-43864
+  patch:
+  - 025f2b85a5e5a46df14ecf162c3c80a957a36d0b
+- cve: CVE-2024-43865
+  patch:
+  - 4734406c39238cbeafe66f0060084caa3247ff53
+- cve: CVE-2024-43866
+  patch:
+  - 1b75da22ed1e6171e261bc9265370162553d5393
+- cve: CVE-2024-43867
+  patch:
+  - a9bf3efc33f1fbf88787a277f7349459283c9b95
+- cve: CVE-2024-43868
+  patch:
+  - fb197c5d2fd24b9af3d4697d0cf778645846d6d5
+- cve: CVE-2024-43869
+  patch:
+  - 3a5465418f5fd970e86a86c7f4075be262682840
+- cve: CVE-2024-43870
+  patch: []
+- cve: CVE-2024-43871
+  patch:
+  - bd50a974097bb82d52a458bd3ee39fb723129a0c
+- cve: CVE-2024-43872
+  patch:
+  - 2fdf34038369c0a27811e7b4680662a14ada1d6b
+- cve: CVE-2024-43873
+  patch:
+  - 1e1fdcbdde3b7663e5d8faeb2245b9b151417d22
+- cve: CVE-2024-43874
+  patch:
+  - 468e3295774d0edce15f4ae475913b5076dd4f40
+- cve: CVE-2024-43875
+  patch:
+  - 8e0f5a96c534f781e8c57ca30459448b3bfe5429
+- cve: CVE-2024-43876
+  patch:
+  - c93637e6a4c4e1d0e85ef7efac78d066bbb24d96
+- cve: CVE-2024-43877
+  patch:
+  - 629913d6d79508b166c66e07e4857e20233d85a9
+- cve: CVE-2024-43878
+  patch:
+  - 54fcc6189dfb822eea984fa2b3e477a02447279d
+- cve: CVE-2024-43879
+  patch:
+  - bcbd771cd5d68c0c52567556097d75f9fc4e7cd6
+- cve: CVE-2024-43880
+  patch:
+  - 97d833ceb27dc19f8777d63f90be4a27b5daeedf
+- cve: CVE-2024-43881
+  patch:
+  - 33322e3ef07409278a18c6919c448e369d66a18e
+- cve: CVE-2024-43882
+  patch:
+  - f50733b45d865f91db90919f8311e2127ce5a0cb
+- cve: CVE-2024-43883
+  patch:
+  - afdcfd3d6fcdeca2735ca8d994c5f2d24a368f0a
+- cve: CVE-2024-43884
+  patch:
+  - 538fd3921afac97158d4177139a0ad39f056dbb2
+- cve: CVE-2024-43885
+  patch:
+  - e0391e92f9ab4fb3dbdeb139c967dcfa7ac4b115
+- cve: CVE-2024-43886
+  patch: []
+- cve: CVE-2024-43887
+  patch:
+  - 14ab4792ee120c022f276a7e4768f4dcb08f0cdd
+- cve: CVE-2024-43888
+  patch:
+  - 5161b48712dcd08ec427c450399d4d1483e21dea
+- cve: CVE-2024-43889
+  patch:
+  - 6d45e1c948a8b7ed6ceddb14319af69424db730c
+- cve: CVE-2024-43890
+  patch: []
+- cve: CVE-2024-43891
+  patch:
+  - b1560408692cd0ab0370cfbe9deb03ce97ab3f6d
+- cve: CVE-2024-43892
+  patch: []
+- cve: CVE-2024-43893
+  patch:
+  - 6eabce6608d6f3440f4c03aa3d3ef50a47a3d193
+- cve: CVE-2024-43894
+  patch:
+  - 113fd6372a5bb3689aba8ef5b8a265ed1529a78f
+- cve: CVE-2024-43895
+  patch: []
+- cve: CVE-2024-43896
+  patch:
+  - dc268085e499666b9f4f0fcb4c5a94e1c0b193b3
+- cve: CVE-2024-43897
+  patch:
+  - 89add40066f9ed9abe5f7f886fe5789ff7e0c50e
+- cve: CVE-2024-43898
+  patch:
+  - 83f4414b8f84249d538905825b088ff3ae555652
+- cve: CVE-2024-43899
+  patch: []
+- cve: CVE-2024-43900
+  patch: []
+- cve: CVE-2024-43901
+  patch:
+  - 5af757124792817f8eb1bd0c80ad60fab519586b
+- cve: CVE-2024-43902
+  patch:
+  - 8092aa3ab8f7b737a34b71f91492c676a843043a
+- cve: CVE-2024-43903
+  patch:
+  - 38e6f715b02b572f74677eb2f29d3b4bc6f1ddff
+- cve: CVE-2024-43904
+  patch:
+  - 15c2990e0f0108b9c3752d7072a97d45d4283aea
+- cve: CVE-2024-43905
+  patch:
+  - 50151b7f1c79a09117837eb95b76c2de76841dab
+- cve: CVE-2024-43906
+  patch:
+  - 030ffd4d43b433bc6671d9ec34fc12c59220b95d
+- cve: CVE-2024-43907
+  patch:
+  - d19fb10085a49b77578314f69fff21562f7cd054
+- cve: CVE-2024-43908
+  patch:
+  - 4c11d30c95576937c6c35e6f29884761f2dddb43
+- cve: CVE-2024-43909
+  patch:
+  - c02c1960c93eede587576625a1221205a68a904f
+- cve: CVE-2024-43910
+  patch:
+  - ec2b9a5e11e51fea1bb04c1e7e471952e887e874
+- cve: CVE-2024-43911
+  patch:
+  - 021d53a3d87eeb9dbba524ac515651242a2a7e3b
+- cve: CVE-2024-43912
+  patch:
+  - 23daf1b4c91db9b26f8425cc7039cf96d22ccbfe
+- cve: CVE-2024-43913
+  patch:
+  - b9ecbfa45516182cd062fecd286db7907ba84210
+- cve: CVE-2024-43914
+  patch:
+  - 305a5170dc5cf3d395bb4c4e9239bca6d0b54b49
+- cve: CVE-2024-44931
+  patch:
+  - d795848ecce24a75dfd46481aee066ae6fe39775
+- cve: CVE-2024-44932
+  patch: []
+- cve: CVE-2024-44933
+  patch:
+  - da03f5d1b2c319a2b74fe76edeadcd8fa5f44376
+- cve: CVE-2024-44934
+  patch:
+  - 92c4ee25208d0f35dafc3213cdf355fbe449e078
+- cve: CVE-2024-44935
+  patch:
+  - 9ab0faa7f9ffe31296dbb9bbe6f76c72c14eea18
+- cve: CVE-2024-44936
+  patch:
+  - d3911f1639e67fc7b12aae0efa5a540976d7443b
+- cve: CVE-2024-44937
+  patch:
+  - e075c3b13a0a142dcd3151b25d29a24f31b7b640
+- cve: CVE-2024-44938
+  patch:
+  - 7063b80268e2593e58bee8a8d709c2f3ff93e2f2
+- cve: CVE-2024-44939
+  patch:
+  - ce6dede912f064a855acf6f04a04cbb2c25b8c8c
+- cve: CVE-2024-44940
+  patch:
+  - dd89a81d850fa9a65f67b4527c0e420d15bf836c
+- cve: CVE-2024-44941
+  patch:
+  - d7409b05a64f212735f0d33f5f1602051a886eab
+- cve: CVE-2024-44942
+  patch:
+  - fc01008c92f40015aeeced94750855a7111b6929
+- cve: CVE-2024-44943
+  patch: []
+- cve: CVE-2024-44944
+  patch: []
+- cve: CVE-2024-44945
+  patch: []
+- cve: CVE-2024-44946
+  patch:
+  - 807067bf014d4a3ae2cc55bd3de16f22a01eb580
+- cve: CVE-2024-44947
+  patch:
+  - 3c0da3d163eb32f1f91891efaade027fa9b245b9
+- cve: CVE-2024-44948
+  patch:
+  - 919f18f961c03d6694aa726c514184f2311a4614
+- cve: CVE-2024-44949
+  patch:
+  - 7ae04ba36b381bffe2471eff3a93edced843240f
+- cve: CVE-2024-44950
+  patch: []
+- cve: CVE-2024-44951
+  patch: []
+- cve: CVE-2024-44952
+  patch: []
+- cve: CVE-2024-44953
+  patch:
+  - 3911af778f208e5f49d43ce739332b91e26bc48e
+- cve: CVE-2024-44954
+  patch: []
+- cve: CVE-2024-44955
+  patch: []
+- cve: CVE-2024-44956
+  patch:
+  - 3cd1585e57908b6efcd967465ef7685f40b2a294
+- cve: CVE-2024-44957
+  patch: []
+- cve: CVE-2024-44958
+  patch: []
+- cve: CVE-2024-44959
+  patch: []
+- cve: CVE-2024-44960
+  patch: []
+- cve: CVE-2024-44961
+  patch: []
+- cve: CVE-2024-44962
+  patch:
+  - 0d0df1e750bac0fdaa77940e711c1625cff08d33
+- cve: CVE-2024-44963
+  patch: []
+- cve: CVE-2024-44964
+  patch: []
+- cve: CVE-2024-44965
+  patch:
+  - 41e71dbb0e0a0fe214545fe64af031303a08524c
+- cve: CVE-2024-44966
+  patch: []
+- cve: CVE-2024-44967
+  patch:
+  - eb1ae34e48a09b7a1179c579aed042b032e408f4
+- cve: CVE-2024-44968
+  patch:
+  - 6881e75237a84093d0986f56223db3724619f26e
+- cve: CVE-2024-44969
+  patch:
+  - bf365071ea92b9579d5a272679b74052a5643e35
+- cve: CVE-2024-44970
+  patch:
+  - fba8334721e266f92079632598e46e5f89082f30
+- cve: CVE-2024-44971
+  patch:
+  - e3862093ee93fcfbdadcb7957f5f8974fffa806a
+- cve: CVE-2024-44972
+  patch:
+  - 97713b1a2ced1e4a2a6c40045903797ebd44d7e0
+- cve: CVE-2024-44973
+  patch:
+  - a371d558e6f3aed977a8a7346350557de5d25190
+- cve: CVE-2024-44974
+  patch:
+  - 48e50dcbcbaaf713d82bf2da5c16aeced94ad07d
+- cve: CVE-2024-44975
+  patch:
+  - 959ab6350add903e352890af53e86663739fcb9a
+- cve: CVE-2024-44976
+  patch:
+  - 822c8020aebcf5804a143b891e34f29873fee5e2
+- cve: CVE-2024-44977
+  patch:
+  - c99769bceab4ecb6a067b9af11f9db281eea3e2a
+- cve: CVE-2024-44978
+  patch:
+  - 9e7f30563677fbeff62d368d5d2a5ac7aaa9746a
+- cve: CVE-2024-44979
+  patch:
+  - a6f78359ac75f24cac3c1bdd753c49c1877bcd82
+- cve: CVE-2024-44980
+  patch:
+  - f4b2a0ae1a31fd3d1b5ca18ee08319b479cf9b5f
+- cve: CVE-2024-44981
+  patch:
+  - 38f7e14519d39cf524ddc02d4caee9b337dad703
+- cve: CVE-2024-44982
+  patch: []
+- cve: CVE-2024-44983
+  patch: []
+- cve: CVE-2024-44984
+  patch:
+  - 8baeef7616d5194045c5a6b97fd1246b87c55b13
+- cve: CVE-2024-44985
+  patch:
+  - 2d5ff7e339d04622d8282661df36151906d0e1c7
+- cve: CVE-2024-44986
+  patch:
+  - da273b377ae0d9bd255281ed3c2adb228321687b
+- cve: CVE-2024-44987
+  patch: []
+- cve: CVE-2024-44988
+  patch:
+  - 528876d867a23b5198022baf2e388052ca67c952
+- cve: CVE-2024-44989
+  patch: []
+- cve: CVE-2024-44990
+  patch:
+  - 95c90e4ad89d493a7a14fa200082e466e2548f9d
+- cve: CVE-2024-44991
+  patch:
+  - 565d121b69980637f040eb4d84289869cdaabedf
+- cve: CVE-2024-44992
+  patch: []
+- cve: CVE-2024-44993
+  patch:
+  - 497d370a644d95a9f04271aa92cb96d32e84c770
+- cve: CVE-2024-44994
+  patch:
+  - fca5b78511e98bdff2cdd55c172b23200a7b3404
+- cve: CVE-2024-44995
+  patch:
+  - be5e816d00a506719e9dbb1a9c861c5ced30a109
+- cve: CVE-2024-44996
+  patch:
+  - 69139d2919dd4aa9a553c8245e7c63e82613e3fc
+- cve: CVE-2024-44997
+  patch:
+  - db1b4bedb9b97c6d34b03d03815147c04fffe8b4
+- cve: CVE-2024-44998
+  patch:
+  - a9a18e8f770c9b0703dab93580d0b02e199a4c79
+- cve: CVE-2024-44999
+  patch:
+  - 3a3be7ff9224f424e485287b54be00d2c6bd9c40
+- cve: CVE-2024-45000
+  patch:
+  - f71aa06398aabc2e3eaac25acdf3d62e0094ba70
+- cve: CVE-2024-45001
+  patch: []
+- cve: CVE-2024-45002
+  patch:
+  - 90574d2a675947858b47008df8d07f75ea50d0d0
+- cve: CVE-2024-45003
+  patch:
+  - 2a0629834cd82f05d424bbc193374f9a43d1f87d
+- cve: CVE-2024-45004
+  patch: []
+- cve: CVE-2024-45005
+  patch:
+  - 5a44bb061d04b0306f2aa8add761d86d152b9377
+- cve: CVE-2024-45006
+  patch: []
+- cve: CVE-2024-45007
+  patch:
+  - ccbde4b128ef9c73d14d0d7817d68ef795f6d131
+- cve: CVE-2024-45008
   patch: []
