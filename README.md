@@ -226,10 +226,20 @@ subcommands:
 If you use KernJC, please cite the [following paper](https://arxiv.org/abs/2404.11107):
 
 ```
-@article{ruan2024kernjc,
-  title={KernJC: Automated Vulnerable Environment Generation for Linux Kernel Vulnerabilities},
-  author={Ruan, Bonan and Liu, Jiahao and Zhang, Chuqi and Liang, Zhenkai},
-  journal={arXiv preprint arXiv:2404.11107},
-  year={2024}
+@inproceedings{ruan2024kernjc,
+  author = {Ruan, Bonan and Liu, Jiahao and Zhang, Chuqi and Liang, Zhenkai},
+  title = {KernJC: Automated Vulnerable Environment Generation for Linux Kernel Vulnerabilities},
+  year = {2024},
+  isbn = {9798400709593},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3678890.3678891},
+  doi = {10.1145/3678890.3678891},
+  booktitle = {Proceedings of the 27th International Symposium on Research in Attacks, Intrusions and Defenses},
+  pages = {384–402},
+  numpages = {19},
+  keywords = {Linux Kernel, Reproduction, Vulnerable Environment},
+  location = {Padua, Italy},
+  series = {RAID '24}
 }
 ```
