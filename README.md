@@ -19,7 +19,7 @@ The workflow of KernJC is shown as below:
 
 <img src="images/overview.png" alt="workflow" width="70%" />
 
-You can refer to [KernJC paper](https://arxiv.org/abs/2404.11107) for more details.
+You can refer to [KernJC paper](https://dl.acm.org/doi/10.1145/3678890.3678891) for more details.
 
 <!-- ![](images/overview.png) -->
 
@@ -223,7 +223,7 @@ subcommands:
 
 ## Citation
 
-If you use KernJC, please cite the [following paper](https://arxiv.org/abs/2404.11107):
+If you use KernJC, please cite the [following paper](https://dl.acm.org/doi/10.1145/3678890.3678891):
 
 ```
 @inproceedings{ruan2024kernjc,
