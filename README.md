@@ -206,7 +206,7 @@ optional arguments:
 
 subcommands:
   {update,build,start,stop,attach,exec,cp,logs,rm,ps,enter,info,query}
-    update              update local knodwledge base
+    update              update local knowledge base
     build               build a vuln env
     start               start a vuln env
     stop                stop a vuln env

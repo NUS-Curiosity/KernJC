@@ -59,7 +59,7 @@ def main():
     # subparsers = parser.add_subparsers(help='description', metavar='subcommand')
     subparsers = parser.add_subparsers(title="subcommands", dest="subcommand")
 
-    parser_update = subparsers.add_parser("update", help="update local knodwledge base")
+    parser_update = subparsers.add_parser("update", help="update local knowledge base")
     parser_update.set_defaults(func=src.cmds.update.handler)
     parser_update.add_argument(
         "--only-sc",
