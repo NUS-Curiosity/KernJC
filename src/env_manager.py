@@ -524,7 +524,8 @@ def build_kernel(env_id, opt=BUILD_OPT_KJC):
             subprocess.run(["make", "olddefconfig"], check=True)
 
         start_time = time.time()
-        subprocess.run(["make", "-j$(nproc)"], shell=True, check=True)
+        num_cores = os.cpu_count()
+        subprocess.run(["make", f"-j{num_cores}"], check=True)
         end_time = time.time()
         logger.info(f"Kernel build time: {end_time - start_time} seconds")
 
