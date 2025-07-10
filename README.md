@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/kernjc-logo.png" alt="kernjc-logo" height="350" />
+  <img src="images/kernjc-logo.png" alt="kernjc-logo" height="300" />
 </p>
 
 ## Introduction
