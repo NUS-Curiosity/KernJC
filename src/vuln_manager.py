@@ -7,6 +7,7 @@ import tempfile
 import re
 import time
 import sys
+import os
 import packaging.version as ver
 import yaml
 import networkx as nx
@@ -125,21 +126,50 @@ def _get_cve_list_from_linux_cve_announce():
     cves = set()
     logger.debug("Getting latest CVE list from linux-cve-announce repo")
     current_year = int(time.strftime("%Y", time.localtime()))
-    # linux-cve-announce
-    url = "https://git.kernel.org/pub/scm/linux/security/vulns.git/tree/cve/published"
-    # get all the cve ID from the repo
-    for year in range(2019, current_year + 1):
-        r = requests.get(f"{url}/{year}")
-        if r.status_code // 100 != 2:
-            logger.error(
-                f"Failed to get CVE list from linux-cve-announce repo for {year}"
-            )
-            continue
-        time.sleep(0.5)
-        # find all CVE IDs with regex in r.text
-        cves.update(re.findall(CVE_PATTERN, r.text))
     
-    # sort
+    # Define the repository URL and local path
+    repo_url = "https://git.kernel.org/pub/scm/linux/security/vulns.git"
+    local_repo_path = os.path.join(WORK_DIR, "vulns")
+    
+    # Ensure WORK_DIR exists
+    ensure_dir(WORK_DIR)
+    
+    # Clone or update the repository
+    if os.path.exists(local_repo_path):
+        logger.debug(f"Repository exists at {local_repo_path}, updating...")
+        # Reset any local changes and pull latest
+        run_cmd_get_stdout(f"cd {local_repo_path} && git checkout -- .")
+        run_cmd_get_stdout(f"cd {local_repo_path} && git pull")
+    else:
+        logger.debug(f"Cloning repository to {local_repo_path}...")
+        run_cmd_get_stdout(f"cd {WORK_DIR} && git clone {repo_url}")
+    
+    # Path to the published CVE directory
+    published_dir = os.path.join(local_repo_path, "cve", "published")
+    
+    if not os.path.exists(published_dir):
+        logger.error(f"Published directory not found: {published_dir}")
+        return []
+    
+    # Parse CVE files from each year directory
+    for year in range(2019, current_year + 1):
+        year_dir = os.path.join(published_dir, str(year))
+        if not os.path.exists(year_dir):
+            logger.warning(f"Year directory not found: {year_dir}")
+            continue
+        
+        try:
+            # Get all filenames in the year directory
+            filenames = os.listdir(year_dir)
+            for filename in filenames:
+                # Find CVE IDs using regex pattern
+                matches = re.findall(CVE_PATTERN, filename)
+                cves.update(matches)
+        except OSError as e:
+            logger.error(f"Failed to read directory {year_dir}: {e}")
+            continue
+    
+    # Sort the CVEs
     cves = sorted(list(cves))
 
     logger.info(f"Got {len(cves)} CVEs from linux-cve-announce repo")
@@ -168,6 +198,8 @@ def get_cve_info_from_nvd(cve, api_key):
         res = r.json()["vulnerabilities"]
         if res:
             return res[0]["cve"]
+    else:
+        logger.error(f"NVD API request failed for {cve}. Status code: {r.status_code}")
 
     return None
 
@@ -191,6 +223,8 @@ def get_cve_info_from_nvd_in_batch(cves, api_key):
             fw.close()
             res.append(cve)
             cnt += 1
+        else:
+            logger.warning(f"Failed to get info for {cve} from NVD")
         if cnt != 0 and cnt % NVD_REQUEST_ROLLING_LIMIT == 0:
             # elapsed_time = time.time() - start_time
             # if elapsed_time < NVD_REQUEST_ROLLING_TIME_WINDOW:
