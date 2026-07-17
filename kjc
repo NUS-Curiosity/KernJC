@@ -305,7 +305,7 @@ def main():
     except KeyboardInterrupt:
         logger.warning("Bye")
         sys.exit(1)
-    except:
+    except Exception:
         raise
 
 
